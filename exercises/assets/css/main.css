@@ -10,65 +10,66 @@ body {
 	width: 900px;
 	height: 556px;
 	margin: 100px auto;
-	background: white;
+	background: #999999;
 	position: relative;
 }
 
 .vasefigure {
-	top: ;
-	left: ;
+	top: -30px;
+	left: 60px;
+	position: absolute;
 }
 
 #flower1 {
 	border-right: 20px solid transparent;
-  border-top: 20px solid red;
-  border-left: 20px solid red;
-  border-bottom: 20px solid red;
+  border-top: 20px solid #ccccff;
+  border-left: 20px solid #ccccff;
+  border-bottom: 20px solid #ccccff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 	border-radius: 10px;
-	top: 165px;
-	left: 155px;
+	top: 160px;
+	left: 260px;
 	position: absolute;
-	-ms-transform: rotate(-100deg);
-    -webkit-transform: rotate(-100deg);
-    transform: rotate(-100deg);
+	-ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
 
 }
 
 #flower2 {
 	border-right: 20px solid transparent;
-  border-top: 20px solid red;
-  border-left: 20px solid red;
-  border-bottom: 20px solid red;
+  border-top: 20px solid #ccccff;
+  border-left: 20px solid #ccccff;
+  border-bottom: 20px solid #ccccff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-leftradius: 20px;
   border-bottom-right-radius: 20px;
 	border-radius: 10px;
-	top: 165px;
-	left: 160px;
+	top: 155px;
+	left: 190px;
 	position: absolute;
-	-ms-transform: rotate(-100deg);
-    -webkit-transform: rotate(-100deg);
-    transform: rotate(-100deg);
+	-ms-transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
 
 }
 
 #flower3 {
 	border-right: 20px solid transparent;
-  border-top: 20px solid red;
-  border-left: 20px solid red;
-  border-bottom: 20px solid red;
+  border-top: 20px solid #ccccff;
+  border-left: 20px solid #ccccff;
+  border-bottom: 20px solid #ccccff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 	border-radius: 10px;
 	top: 165px;
-	left: 155px;
+	left: 215px;
 	position: absolute;
 	-ms-transform: rotate(-100deg);
     -webkit-transform: rotate(-100deg);
@@ -77,9 +78,9 @@ body {
 }
 #flower4 {
 	border-right: 20px solid transparent;
-  border-top: 20px solid red;
-  border-left: 20px solid red;
-  border-bottom: 20px solid red;
+  border-top: 20px solid #ccccff;
+  border-left: 20px solid #ccccff;
+  border-bottom: 20px solid #ccccff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -99,21 +100,12 @@ body {
 	height: 150px;
 	top: 230px;
 	left: 170px;
-	border-radius: 20px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #cccccc;
+	border-radius: 10px;
 	background: white;
 	position: absolute;
 	opacity: 0.6;
-	background: rgba(255,255,255,1);
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(226,226,226,1) 25%, rgba(219,219,219,1) 53%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(1%, rgba(255,255,255,1)), color-stop(25%, rgba(226,226,226,1)), color-stop(53%, rgba(219,219,219,1)), color-stop(62%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(226,226,226,1) 25%, rgba(219,219,219,1) 53%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(226,226,226,1) 25%, rgba(219,219,219,1) 53%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(226,226,226,1) 25%, rgba(219,219,219,1) 53%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(226,226,226,1) 25%, rgba(219,219,219,1) 53%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe', GradientType=0 );
+	background-url: http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=cccccc&density=32&opacity=32
+
 }
 
 #vasewater {
@@ -121,7 +113,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: 100px;
 	top: 275px;
 	left: 175px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background: #ccffff;
 	position: absolute;
 	opacity:0.9;
@@ -186,14 +178,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5fcff', end
 	height: 200px;
 	top: 200px;
 	left: 340px;
-background: rgba(253,255,247,1);
-background: -moz-linear-gradient(top, rgba(253,255,247,1) 37%, rgba(243,255,232,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(37%, rgba(253,255,247,1)), color-stop(100%, rgba(243,255,232,1)));
-background: -webkit-linear-gradient(top, rgba(253,255,247,1) 37%, rgba(243,255,232,1) 100%);
-background: -o-linear-gradient(top, rgba(253,255,247,1) 37%, rgba(243,255,232,1) 100%);
-background: -ms-linear-gradient(top, rgba(253,255,247,1) 37%, rgba(243,255,232,1) 100%);
-background: linear-gradient(to bottom, rgba(253,255,247,1) 37%, rgba(243,255,232,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfff7', endColorstr='#f3ffe8', GradientType=0 );
+background: rgba(226,226,226,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 49%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(226,226,226,1)), color-stop(49%, rgba(219,219,219,1)), color-stop(62%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 49%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 49%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 49%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
+background: radial-gradient(ellipse at center, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 49%, rgba(209,209,209,1) 62%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
 	border-radius: 500px;
 	position: absolute;
 	-webkit-box-shadow: 1px 68px 82px -61px rgba(0,0,0,0.75);
@@ -204,7 +196,7 @@ box-shadow: 1px 68px 82px -61px rgba(0,0,0,0.75);
 #pumpkin {
 	width: 120px;
 	height: 110px;
-	top: 340px;
+	top: 320px;
 	left: 525px;
 	border-radius: 500px;
 	position: absolute;
@@ -224,12 +216,12 @@ box-shadow: 1px 68px 82px -61px rgba(0,0,0,0.75);
 
 #mat {
 	top: 300px;
-	left: 50px;
-	border-bottom: 185px solid #00ff00;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
+	left: 90px;
+	border-bottom: 150px solid #00ff00;
+	border-left: 110px solid transparent;
+	border-right: 120px solid transparent;
 	height: 0;
-	width: 800px;
+	width: 700px;
 	position: absolute;
 
 
