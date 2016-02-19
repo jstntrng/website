@@ -216,6 +216,9 @@ background: -o-linear-gradient(top, rgba(255,223,184,1) 0%, rgba(255,146,10,1) 1
 background: -ms-linear-gradient(top, rgba(255,223,184,1) 0%, rgba(255,146,10,1) 100%);
 background: linear-gradient(to bottom, rgba(255,223,184,1) 0%, rgba(255,146,10,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdfb8', endColorstr='#ff920a', GradientType=0 );
+-webkit-box-shadow: 1px 68px 82px -61px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 68px 82px -61px rgba(0,0,0,0.75);
+box-shadow: 1px 68px 82px -61px rgba(0,0,0,0.75);
 
 }
 
