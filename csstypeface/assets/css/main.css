@@ -1,11 +1,40 @@
-
 .container {
-	width: 700px;
+	width: 900px;
 	height: 700px;
-	margin: 100px auto;
-	left: 0px;
+	margin: 50px auto;
 	background: white;
 	position: relative;
+}
+
+
+.containerspec {
+	width: 600px;
+	left: 350px;
+	top: 15px;
+	background: white;
+	position: relative;
+	float: left;
+}
+
+.containerbig {
+	width: 200px;
+	background: white;
+	position: relative;	
+	float:left;
+	left: 100px;
+	
+}
+
+.bigletter {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: white;
+	top:150px;
+	left:0;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
 }
 
 .letterA {
