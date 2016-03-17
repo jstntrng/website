@@ -1,315 +1,255 @@
+body {
+	background: black;
+}
+
 .container {
-	width: 900px;
-	height: 700px;
-	margin: 50px auto;
-	background: white;
-	position: relative;
-}
-
-
-.containerspec {
-	width: 600px;
-	left: 350px;
-	top: 15px;
-	background: white;
-	position: relative;
-	float: left;
-}
-
-.containerbig {
-	width: 200px;
-	background: white;
-	position: relative;	
-	float:left;
-	left: 100px;
-	
-}
-
-.bigletter {
-	width: 74px;
-	height: 88px;
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	left: 50%;
+	background: black;
 	position: absolute;
-	background: white;
-	top:150px;
-	left:0;
-	-ms-transform: scale(4,4); 
-    -webkit-transform: scale(4,4); 
-    transform: scale(4,4); */
+	transform: translate(-50%);
 }
 
-.letterA {
-	width: 74px;
-	height: 88px;
+.button {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
 	position: absolute;
-	background: white;
-	float:left;
-	top:0;
-	left:0;
-	/* use this script to scale up
+	top: 380px;
+	left: 50%;
+}
+
+.enter {
+	display: none;
+	width: 370px;
+	height: 89px;
+	background: black;
+	position: absolute;
+	top: 400px;
+	left: 320px;
+}
+
+.button:hover + .enter {
+	display: block;
+}
+
+.button:active + .enter {
+	background: #cc0099;
+}
+
+
+.button2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: absolute;
+	top: 350px;
+	left: 50%;
 	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+ 	-webkit-transform: scale(2,2); 
+	transform: scale(2,2); */
+	transform: translate(-50%);
 }
 
-.letterB {
-	width: 74px;
-	height: 88px;
+.enter2 {
+	display: none;
+	width: 370px;
+	height: 89px;
+	background: black;
 	position: absolute;
-	background: white;
-	left: 100px;
-	/* use this script to scale up
+	top: 420px;
+	left: 360px;
 	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+ 	-webkit-transform: scale(2,2); 
+	transform: scale(2,2); */
 }
 
-.letterC {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+.button2:hover + .enter2 {
+	display: block;
 }
 
-.letterD {
-	width: 74px;
-	height: 88px;
+.button2:active + .enter2 {
+	background: #cc0099;
+}
+
+.button3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
 	position: absolute;
-	background: white;
-	left: 300px;
-	/* use this script to scale up
+	top: 310px;
+	left: 50%;
+	-ms-transform: scale(3,3); 
+ 	-webkit-transform: scale(3,3); 
+	transform: scale(3,3); */
+}
+
+.enter3 {
+	display: none;
+	width: 370px;
+	height: 89px;
+	background: black;
+	position: absolute;
+	top: 430px;
+	left: 360px;
+	-ms-transform: scale(3,3); 
+ 	-webkit-transform: scale(3,3); 
+	transform: scale(3,3); */
+}
+
+.button3:hover + .enter3 {
+	display: block;
+}
+
+.button3:active + .enter3 {
+	background: #cc0099;
+}
+
+.button4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: absolute;
+	top: 195px;
+	left: 50%;
+}
+
+.enter4 {
+	display: none;
+	width: 370px;
+	height: 89px;
+	background: black;
+	position: absolute;
+	top: 100px;
+	left: 320px;
+}
+
+.button4:hover + .enter4 {
+	display: block;
+}
+
+.button4:active + .enter4 {
+	background: #cc0099;
+}
+
+
+.button5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: absolute;
+	top: 225px;
+	left: 50%;
 	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+ 	-webkit-transform: scale(2,2); 
+	transform: scale(2,2); */
+}
+
+.enter5 {
+	display: none;
+	width: 370px;
+	height: 89px;
+	background: black;
+	position: absolute;
+	top: 80px;
+	left: 360px;
+	-ms-transform: scale(2,2); 
+ 	-webkit-transform: scale(2,2); 
+	transform: scale(2,2); */
+}
+
+.button5:hover + .enter5 {
+	display: block;
+}
+
+.button5:active + .enter5 {
+	background: #cc0099;
+}
+
+.button6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: absolute;
+	top: 265px;
+	left: 50%;
+	-ms-transform: scale(3,3); 
+ 	-webkit-transform: scale(3,3); 
+	transform: scale(3,3); */
+}
+
+.enter6 {
+	display: none;
+	width: 370px;
+	height: 89px;
+	background: black;
+	position: absolute;
+	top: 70px;
+	left: 360px;
+	-ms-transform: scale(3,3); 
+ 	-webkit-transform: scale(3,3); 
+	transform: scale(3,3); */
+}
+
+.button6:hover + .enter6 {
+	display: block;
+}
+
+.button6:active + .enter6 {
+	background: #cc0099;
 }
 
 .letterE {
 	width: 74px;
 	height: 88px;
-	position: absolute;
-	background: white;
-	left: 400px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterF {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 500px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterG {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 0px;
-	top: 100px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterH {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 100px;
-	top: 100px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterI {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 200px;
-	top: 100px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterJ {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 300px;
-	top: 100px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterK {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 400px;
-	top: 100px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterL {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 500px;
-	top: 100px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterM {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 0px;
-	top: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+	position: relative;
+	float: left;
+	margin: 0 auto;
 }
 
 .letterN {
 	width: 74px;
 	height: 88px;
-	position: absolute;
-	background: white;
-	left: 100px;
-	top: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterO {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 200px;
-	top: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterP {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 300px;
-	top: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterQ {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 400px;
-	top: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterR {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 500px;
-	top: 200px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
-}
-
-.letterS {
-	width: 74px;
-	height: 88px;
-	position: absolute;
-	background: white;
-	left: 0px;
-	top: 300px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+	position: relative;
+	float: left;
 }
 
 .letterT {
 	width: 74px;
 	height: 88px;
-	position: absolute;
-	background: white;
-	left: 100px;
-	top: 300px;
-	/* use this script to scale up
-	-ms-transform: scale(2,2); 
-    -webkit-transform: scale(2,2); 
-    transform: scale(2,2); */
+	position: relative;
+	float: left;
+}
+
+.letterR {
+	width: 74px;
+	height: 88px;
+	position: relative;
+	float: left;
 }
 
 
 .topleftline {
-		border-top:1px solid black;
+		border-top:1px solid #00ff42;
 		width:13px;
 		transform: rotate(45deg);
 		transform-origin: 0% 0%;
         position: absolute;
+        left: .5px;
 }
 
 .toprightline {
-		border-top:1px solid black;
+		border-top:1px solid #00ff42;
 		width:13px;
 		transform: rotate(135deg);
 		transform-origin: 0% 0%;
         position: absolute;
-        left: 9.5px;
+        left: 9.2px;
+
 }
+
 
 .column1 {
 	width:9px;
@@ -318,17 +258,20 @@
 }
 
 
+
 .a1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
+
+
 
 .a2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -336,7 +279,7 @@
 .a3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -344,7 +287,7 @@
 .a4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -352,7 +295,7 @@
 .a5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -360,7 +303,7 @@
 .a6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -368,7 +311,7 @@
 .a7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -376,7 +319,7 @@
 .a8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 
 }
@@ -391,56 +334,56 @@
 .b1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .b8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
@@ -454,56 +397,56 @@
 .c1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .c8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
@@ -517,56 +460,56 @@
 .d1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .d8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
@@ -580,56 +523,56 @@
 .e1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .e8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
@@ -643,56 +586,56 @@
 .f1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .f8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
@@ -706,56 +649,56 @@
 .g1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .g8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
@@ -769,55 +712,55 @@
 .h1 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h2 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h3 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h4 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h5 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h6 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h7 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }
 
 .h8 {
 	width:9px;
 	height:9px;
-	border: 1px solid black;
+	border: 1px solid #00ff42;
 	position: relative;
 }

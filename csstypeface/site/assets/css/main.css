@@ -1,0 +1,1941 @@
+body {
+	background: black;
+}
+
+.container {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	left: 50%;
+	background: black;
+	position: absolute;
+	transform: translate(-50%);
+}
+
+.system {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterA {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 20px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+
+
+.bigA {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterA:hover + .bigA {
+	display: block;
+}
+
+.topleftline {
+		border-top:1px solid #00ff42;
+		width:13px;
+		transform: rotate(45deg);
+		transform-origin: 0% 0%;
+        position: absolute;
+        left: .5px;
+}
+
+.toprightline {
+		border-top:1px solid #00ff42;
+		width:13px;
+		transform: rotate(135deg);
+		transform-origin: 0% 0%;
+        position: absolute;
+        left: 9.2px;
+
+}
+
+
+.letterB {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 20px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigB {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterB:hover + .bigB {
+	display: block;
+}
+
+
+.letterC {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 20px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigC {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterC:hover + .bigC {
+	display: block;
+}
+
+
+.letterD {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 20px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigD {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterD:hover + .bigD {
+	display: block;
+}
+
+.letterE {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 20px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigE {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterE:hover + .bigE {
+	display: block;
+}
+
+.letterF {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 20px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigF {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterF:hover + .bigF {
+	display: block;
+}
+
+.letterG {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 120px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigG {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterG:hover + .bigG {
+	display: block;
+}
+
+.letterH {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 120px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigH {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterH:hover + .bigH {
+	display: block;
+}
+
+.letterI {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 120px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigI {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterI:hover + .bigI {
+	display: block;
+}
+
+.letterJ {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 120px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigJ {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top:300px;
+	left:120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterJ:hover + .bigJ {
+	display: block;
+}
+
+.letterK {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 120px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigK {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterK:hover + .bigK {
+	display: block;
+}
+
+.letterL {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 120px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigL {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterL:hover + .bigL {
+	display: block;
+}
+
+.letterM {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 220px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigM {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterM:hover + .bigM {
+	display: block;
+}
+
+.letterN {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 220px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigN {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterN:hover + .bigN {
+	display: block;
+}
+
+.letterO {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 220px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigO {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterO:hover + .bigO {
+	display: block;
+}
+
+
+.letterP {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 220px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigP {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterP:hover + .bigP {
+	display: block;
+}
+
+.letterQ {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 220px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigQ {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterQ:hover + .bigQ {
+	display: block;
+}
+
+.letterR {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 220px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigR {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterR:hover + .bigR {
+	display: block;
+}
+
+
+.letterS {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 320px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigS {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterS:hover + .bigS {
+	display: block;
+}
+
+.letterT {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 320px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigT {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterT:hover + .bigT {
+	display: block;
+}
+
+.letterU {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 320px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigU {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterU:hover + .bigU {
+	display: block;
+}
+
+.letterV {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 320px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigV {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterV:hover + .bigV {
+	display: block;
+}
+
+.letterW {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 320px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigW {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterW:hover + .bigW {
+	display: block;
+}
+
+.letterX {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 320px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigX {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterX:hover + .bigX {
+	display: block;
+}
+
+.letterY {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 420px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigY {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterY:hover + .bigY {
+	display: block;
+}
+
+.letterZ {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 420px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigZ {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.letterZ:hover + .bigZ {
+	display: block;
+}
+
+.number1 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 420px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big1 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number1:hover + .big1 {
+	display: block;
+}
+
+.number2 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 420px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big2 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number2:hover + .big2 {
+	display: block;
+}
+
+.number3 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 420px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big3 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number3:hover + .big3 {
+	display: block;
+}
+
+.number4 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 420px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big4 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number4:hover + .big4 {
+	display: block;
+}
+
+.number5 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 520px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big5 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number5:hover + .big5 {
+	display: block;
+}
+
+.number6 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 520px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big6 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number6:hover + .big6 {
+	display: block;
+}
+
+.number7 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 520px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big7 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number7:hover + .big7 {
+	display: block;
+}
+
+.number8 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 520px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big8 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number8:hover + .big8 {
+	display: block;
+}
+
+.number9 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 520px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big9 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number9:hover + .big9 {
+	display: block;
+}
+
+.number0 {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 520px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.big0 {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.number0:hover + .big0 {
+	display: block;
+}
+
+.period {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 350px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigperiod {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.period:hover + .bigperiod {
+	display: block;
+}
+
+.comma {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 450px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigcomma {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.comma:hover + .bigcomma {
+	display: block;
+}
+
+.exclamation {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 550px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigexclamation {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.exclamation:hover + .bigexclamation {
+	display: block;
+}
+
+.question {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigquestion {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.question:hover + .bigquestion {
+	display: block;
+}
+
+.question {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 650px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigquestion {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.question:hover + .bigquestion {
+	display: block;
+}
+
+.leftquote {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 750px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigleftquote {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.leftquote:hover + .bigleftquote {
+	display: block;
+}
+
+.rightquote {
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float: left;
+	top: 620px;
+	left: 850px;
+	/* use this script to scale up
+	-ms-transform: scale(2,2); 
+    -webkit-transform: scale(2,2); 
+    transform: scale(2,2); */
+}
+
+.bigrightquote {
+	display: none;
+	width: 74px;
+	height: 88px;
+	position: absolute;
+	background: black;
+	float:left;
+	top: 300px;
+	left: 120px;
+	-ms-transform: scale(4,4); 
+    -webkit-transform: scale(4,4); 
+    transform: scale(4,4); */
+}
+
+.rightquote:hover + .bigrightquote {
+	display: block;
+}
+
+
+
+.column1 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+}
+
+.a1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+
+
+.a2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.a3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.a4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.a5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.a6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.a7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.a8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+
+}
+
+.column2 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 9px;
+}
+
+.b1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.b8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.column3 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 18px;
+}
+
+.c1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.c8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.column4 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 27px;
+}
+
+.d1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.d8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.column5 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 36px;
+}
+
+.e1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.e8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.column6 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 45px;
+}
+
+.f1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.f8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.column7 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 54px;
+}
+
+.g1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.g8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.column8 {
+	width:9px;
+	height: 88px;
+	position: absolute;
+	left: 63px;
+}
+
+.h1 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h2 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h3 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h4 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h5 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h6 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h7 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
+
+.h8 {
+	width:9px;
+	height:9px;
+	border: 1px solid #00ff42;
+	position: relative;
+}
