@@ -33,7 +33,6 @@ d8888b.  .d88b.  db      d88888b   d8888b. db       .d8b.  db    db db
 88 `88. `8b  d8' 88booo. 88.       88      88booo. 88   88    88    db 
 88   YD  `Y88P'  Y88888P Y88888P   88      Y88888P YP   YP    YP    YP 
  -->
-
 <div class="god">
 
 	<div class="container">
@@ -46,24 +45,71 @@ THIS IS A CALL TO ARMS.</br>
 Battle is upon us. </br>
 Help win the war. </br>
 </br>
+
+</br>
+	<a id="button">
+		ONE
+	</a>
+</br>
+
 <b>Create your character</b> </br>
 
-			<a class="sword">
+			<a id ="sword">
 				<img src="sword.gif">
 			</a>
-			<div class="wand">
+			<a id="wand">
 				<img src="wand.gif">
-			</div>
-			<div class="arrows">
+			</a>
+			<div id="arrows">
 				<img src="arrows.gif">
 			</div>
-			<div class="shield">
+			<div id="shield">
 				<img src="shield.gif">
 			</div>
+</br>
+
 	</div>
+	</div>
+<div id="sword2">
+	<img src="sword.gif">
+</div>
+
+<div id="wand2">
+	<img src="wand.gif">
+</div>
+
+<div id="arrows2">
+	<img src="arrows.gif">
+</div>
 
 </div>
-</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('sword2').hide();
+			$('wand2').hide();
+			$('arrows2').hide();
+
+			$('#sword').on('click', function() {
+				$('#sword2').show(200);
+				$('#wand2').hide();
+				$('#arrows2').hide(200);
+				});
+			$('#wand').on('click', function() {
+				$('#wand2').show(200);
+				$('#arrows2').hide(200);
+				});
+			$('#arrows').on('click', function() {
+				$('#arrows2').show(200);
+				});
+
+		});
+
+</script>
+
+
 </body>
 
 </html>

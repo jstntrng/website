@@ -1,7 +1,7 @@
 body {
 	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
 	background: white;
-	font-size: 36pt;
+	font-size: 24pt;
 }
 
 .god {
@@ -19,78 +19,105 @@ body {
 	position: absolute;
 }
 
+.button {
+	background: black;
+}
+
+
 .logo {
 	width: 400px;
-	left: 120px;
+	left: -15px;
 	top: 50px;
 	position: relative;
-	-ms-transform: scale(2,2);
-	-webkit-transform:scale(2,2);
-	transform: scale (2, 2);
+	-ms-transform: scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform: scale (1, 1);
 }
 
-.icons {
-	width: 100%;
-	position: absolute;
+
+#sword{
+	width: 140px;
+	height: 140px;
+	float:left;
+	left:-15px;
+	top: 20px;
+	position: relative;
+	-ms-transform: scale(.5,.5);
+	-webkit-transform:scale(.5,.5);
+	transform: scale (.5, .5);
 }
 
-.sword{
+#sword2{
 	width: 280px;
 	height: 280px;
 	float:left;
+	left: 420px;
+	top: 50px;
+	position: fixed;
+	-ms-transform: scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform: scale (1,1);
+	background:white;
+}
+
+
+
+#wand{
+	width: 140px;
+	height: 140px;
+	float:left;
+	left:-15px;
 	top: 20px;
 	position: relative;
-	-ms-transform: scale(.7,.7);
-	-webkit-transform:scale(.7,.7);
-	transform: scale (.7, .7);
+	-ms-transform: scale(.5,.5);
+	-webkit-transform:scale(.5,.5);
+	transform: scale (.5,.5);
 }
 
-.sword:active{
-	background:red;
-}
-
-
-.wand{
+#wand2{
 	width: 280px;
 	height: 280px;
 	float:left;
-	top: 20px;
-	position: relative;
-	-ms-transform: scale(.7,.7);
-	-webkit-transform:scale(.7,.7);
-	transform: scale (.7, .7);
+	left: 420px;
+	top: 50px;
+	position: fixed;
+	-ms-transform: scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform: scale (1,1);
+	background:white;
 }
 
-.wand:active {
-	background:red;
-}
-
-.arrows{
-	width: 280px;
-	height: 280px;
+#arrows{
+	width: 140px;
+	height: 140px;
 	top: 20px;
 	float: left;
 	position: relative;
-	-ms-transform: scale(.7,.7);
-	-webkit-transform:scale(.7,.7);
-	transform: scale (.7, .7);
+	-ms-transform: scale(.5,.5);
+	-webkit-transform:scale(.5,.5);
+	transform: scale (.5,.5);
 }
 
-.arrows:active {
-	background:red;
-}
-
-.shield{
-	top: 20px;
+#arrows2{
 	width: 280px;
 	height: 280px;
-	float: left;
-	position: relative;
-	-ms-transform: scale(.7,.7);
-	-webkit-transform:scale(.7,.7);
-	transform: scale (.7, .7);
+	float:left;
+	left: 420px;
+	top: 50px;
+	position: fixed;
+	-ms-transform: scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform: scale (1,1);
+	background:white;
 }
 
-.shield:active {
-	background:red;
+#shield{
+	top: 20px;
+	width: 140px;
+	height: 140px;
+	float: left;
+	position: relative;
+	-ms-transform: scale(.5,.5);
+	-webkit-transform:scale(.5,.5);
+	transform: scale (.5,.5);
 }
