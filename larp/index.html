@@ -148,6 +148,12 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 <div id="race4big">
 	<b>WARLOCK</b>
 	</div>
+</br>
+</br>
+
+<div text="div">
+	This is your 
+	</div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
@@ -173,7 +179,8 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 				$('#sword2').fadeIn(400);
 				$('#wand2').fadeOut(200);
 				$('#arrows2').fadeOut(200);
-				$('#shield2').fadeOut(200);
+				$('#shield2').fadeOut(200);  
+
 				});
 			$('#wand').on('click', function() {
 				$('#wand2').fadeIn(400);
@@ -192,6 +199,7 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 				});
 
 			$('#name1').on('click', function() {
+				$("#name1").css("color:red");
 				$('#name1big').fadeIn(400);
 				$('#name2big').fadeOut(200);
 				$('#name3big').fadeOut(200);
@@ -257,7 +265,6 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 			$('#race4').on('click', function() {
 				$('#race4big').fadeIn(400);
 				});
-
 
 		});
 </script>
