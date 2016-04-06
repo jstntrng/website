@@ -49,10 +49,10 @@ body {
 
 #sword2{
 	width: 280px;
-	height: 280px;
+	height: 350px;
 	float:left;
 	left: 420px;
-	top: 50px;
+	top: 120px;
 	position: fixed;
 	-ms-transform: scale(1,1);
 	-webkit-transform:scale(1,1);
@@ -66,7 +66,7 @@ body {
 	width: 140px;
 	height: 140px;
 	float:left;
-	left:-15px;
+	left:-27px;
 	top: 20px;
 	position: relative;
 	-ms-transform: scale(.5,.5);
@@ -76,10 +76,10 @@ body {
 
 #wand2{
 	width: 280px;
-	height: 280px;
+	height: 350px;
 	float:left;
 	left: 420px;
-	top: 50px;
+	top: 120px;
 	position: fixed;
 	-ms-transform: scale(1,1);
 	-webkit-transform:scale(1,1);
@@ -91,6 +91,7 @@ body {
 	width: 140px;
 	height: 140px;
 	top: 20px;
+	left:-5px;
 	float: left;
 	position: relative;
 	-ms-transform: scale(.5,.5);
@@ -100,10 +101,10 @@ body {
 
 #arrows2{
 	width: 280px;
-	height: 280px;
+	height: 350px;
 	float:left;
 	left: 420px;
-	top: 50px;
+	top: 120px;
 	position: fixed;
 	-ms-transform: scale(1,1);
 	-webkit-transform:scale(1,1);
@@ -120,4 +121,17 @@ body {
 	-ms-transform: scale(.5,.5);
 	-webkit-transform:scale(.5,.5);
 	transform: scale (.5,.5);
+}
+
+#shield2{
+	width: 280px;
+	height: 350px;
+	float:left;
+	left: 420px;
+	top: 120px;
+	position: fixed;
+	-ms-transform: scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform: scale (1,1);
+	background:white;
 }

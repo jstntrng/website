@@ -46,12 +46,6 @@ Battle is upon us. </br>
 Help win the war. </br>
 </br>
 
-</br>
-	<a id="button">
-		ONE
-	</a>
-</br>
-
 <b>Create your character</b> </br>
 
 			<a id ="sword">
@@ -82,30 +76,42 @@ Help win the war. </br>
 	<img src="arrows.gif">
 </div>
 
+<div id="shield2">
+	<img src="shield.gif">
+</div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 <script type="text/javascript">
 		$(document).ready(function(){
-			$('sword2').hide();
-			$('wand2').hide();
-			$('arrows2').hide();
+			$('#sword2').hide();
+			$('#wand2').hide();
+			$('#arrows2').hide();
+			$('#shield2').hide();
 
 			$('#sword').on('click', function() {
 				$('#sword2').show(200);
-				$('#wand2').hide();
+				$('#wand2').hide(200);
 				$('#arrows2').hide(200);
+				$('#shield2').hide(200);
 				});
 			$('#wand').on('click', function() {
 				$('#wand2').show(200);
 				$('#arrows2').hide(200);
 				$('#sword2').hide(200);
+				$('#shield2').hide(200);
 				});
 			$('#arrows').on('click', function() {
 				$('#arrows2').show(200);
+				$('#sword2').hide(200);
+				$('#wand2').hide(200);
+				$('#shield2').hide(200);
 				});
-
+			$('#shield').on('click', function() {
+				$('#shield2').show(200);
+				});
 		});
 
 </script>
