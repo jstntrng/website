@@ -1,0 +1,84 @@
+body {
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+	background: white;
+	font-size: 36pt;
+}
+
+.god {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	top: 50px;
+	left: 5px;
+	margin: auto;
+	position: absolute;
+}
+
+.logo {
+	width: 400px;
+	left: 120px;
+	top: 50px;
+	position: relative;
+	-ms-transform: scale(2,2);
+	-webkit-transform:scale(2,2);
+	transform: scale (2, 2);
+}
+
+.icons {
+	width: 100%;
+	position: absolute;
+}
+
+.sword{
+	width: 280px;
+	height: 280px;
+	float:left;
+	top: 20px;
+	position: relative;
+}
+
+.sword:active{
+	background:red;
+}
+
+
+.wand{
+	width: 280px;
+	height: 280px;
+	float:left;
+	top: 20px;
+	position: relative;
+}
+
+.wand:active {
+	background:red;
+}
+
+.arrows{
+	width: 280px;
+	height: 280px;
+	top: 20px;
+	float: left;
+	position: relative;
+}
+
+.arrows:active {
+	background:red;
+}
+
+.shield{
+	top: 20px;
+	width: 280px;
+	height: 280px;
+	float: left;
+	position: relative;
+}
+
+.shield:active {
+	background:red;
+}
