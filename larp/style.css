@@ -40,6 +40,9 @@ body {
 	float:left;
 	top: 20px;
 	position: relative;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7, .7);
 }
 
 .sword:active{
@@ -53,6 +56,9 @@ body {
 	float:left;
 	top: 20px;
 	position: relative;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7, .7);
 }
 
 .wand:active {
@@ -65,6 +71,9 @@ body {
 	top: 20px;
 	float: left;
 	position: relative;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7, .7);
 }
 
 .arrows:active {
@@ -77,6 +86,9 @@ body {
 	height: 280px;
 	float: left;
 	position: relative;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7, .7);
 }
 
 .shield:active {
