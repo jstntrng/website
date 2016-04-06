@@ -1,7 +1,13 @@
 body {
 	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
 	background: white;
-	font-size: 24pt;
+}
+.text {
+	width:350px;
+	height: 80px;
+	font-weight: none;
+	font-size: 18pt;
+	background: yellow;
 }
 
 .god {
@@ -13,10 +19,85 @@ body {
 .container{
 	width: 100%;
 	height: 100%;
-	top: 50px;
+	top: 0px;
 	left: 5px;
 	margin: auto;
 	position: absolute;
+}
+
+#name {
+	width: 350px;
+	height: 20px;
+	top: 810px;
+	position:absolute;
+	font-size: 14pt;
+
+}
+#namecolumn1 {
+	width:150px;
+	top: 10px;
+	float:left;
+	position:relative;
+}
+
+#namecolumn2{
+	width:150px;
+	top: 10px;
+	float:left;
+	position:relative;
+}
+#name1 {
+	width: 350px;
+	height: 20px;
+	float: left;
+	position: relative;
+}
+
+#name1big{
+	width: 224px;
+	height: 51px;
+	float:left;
+	left: 398px;
+	top: 24%;
+	position: fixed;
+	background:black;
+	color: white;
+	text-align: center;
+	font-size: 24pt
+}
+#name2 {
+	width: 350px;
+	height: 20px;
+	float: left;
+	position: relative;
+}
+#name3 {
+	width: 350px;
+	height: 20px;
+	float: left;
+	position: relative;
+}
+#name4 {
+	width: 350px;
+	height: 20px;
+	float: left;
+	position: relative;
+}
+#name5 {
+	width: 350px;
+	height: 20px;
+	float: left;
+	position: relative;
+}
+#name6 {
+	width: 350;
+	height: 20px;
+	float: left;
+	position: relative;
+}
+
+.icons {
+	width: 350px;
 }
 
 .button {
@@ -26,8 +107,8 @@ body {
 
 .logo {
 	width: 400px;
-	left: -15px;
-	top: 50px;
+	left: -35px;
+	top: 0px;
 	position: relative;
 	-ms-transform: scale(1,1);
 	-webkit-transform:scale(1,1);
@@ -39,8 +120,7 @@ body {
 	width: 140px;
 	height: 140px;
 	float:left;
-	left:-15px;
-	top: 20px;
+	left: 0px;
 	position: relative;
 	-ms-transform: scale(.5,.5);
 	-webkit-transform:scale(.5,.5);
@@ -49,25 +129,25 @@ body {
 
 #sword2{
 	width: 280px;
-	height: 350px;
+	height: 300px;
+	padding-left:20px;
+	padding-right:20px;
 	float:left;
-	left: 420px;
-	top: 120px;
+	left: 350px;
+	top: 25%;
 	position: fixed;
-	-ms-transform: scale(1,1);
-	-webkit-transform:scale(1,1);
-	transform: scale (1,1);
-	background:white;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7,.7);
+	background:black;
 }
-
 
 
 #wand{
 	width: 140px;
 	height: 140px;
 	float:left;
-	left:-27px;
-	top: 20px;
+	left:2px;
 	position: relative;
 	-ms-transform: scale(.5,.5);
 	-webkit-transform:scale(.5,.5);
@@ -76,21 +156,22 @@ body {
 
 #wand2{
 	width: 280px;
-	height: 350px;
+	height: 300px;
+	padding-left:20px;
+	padding-right:20px;
 	float:left;
-	left: 420px;
-	top: 120px;
+	left: 350px;
+	top:25%;
 	position: fixed;
-	-ms-transform: scale(1,1);
-	-webkit-transform:scale(1,1);
-	transform: scale (1,1);
-	background:white;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7,.7);
+	background:black;
 }
 
 #arrows{
 	width: 140px;
 	height: 140px;
-	top: 20px;
 	left:-5px;
 	float: left;
 	position: relative;
@@ -101,19 +182,20 @@ body {
 
 #arrows2{
 	width: 280px;
-	height: 350px;
+	height: 300px;
+	padding-left:20px;
+	padding-right:20px;
 	float:left;
-	left: 420px;
-	top: 120px;
+	left: 350px;
+	top: 25%;
 	position: fixed;
-	-ms-transform: scale(1,1);
-	-webkit-transform:scale(1,1);
-	transform: scale (1,1);
-	background:white;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7,.7);
+	background:black;
 }
 
 #shield{
-	top: 20px;
 	width: 140px;
 	height: 140px;
 	float: left;
@@ -125,13 +207,15 @@ body {
 
 #shield2{
 	width: 280px;
-	height: 350px;
+	height: 300px;
+	padding-left:20px;
+	padding-right:20px;
 	float:left;
-	left: 420px;
-	top: 120px;
+	left: 350px;
+	top: 25%;
 	position: fixed;
-	-ms-transform: scale(1,1);
-	-webkit-transform:scale(1,1);
-	transform: scale (1,1);
-	background:white;
+	-ms-transform: scale(.7,.7);
+	-webkit-transform:scale(.7,.7);
+	transform: scale (.7,.7);
+	background:black;
 }

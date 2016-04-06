@@ -35,19 +35,18 @@ d8888b.  .d88b.  db      d88888b   d8888b. db       .d8b.  db    db db
  -->
 <div class="god">
 
-	<div class="container">
+<div class="container">
 		<div class="logo">
 			<img src="logo.gif"> </div>
 		</br>
-</br>
-</br>
-THIS IS A CALL TO ARMS.</br>
+
+<div class="text">THIS IS A CALL TO ARMS.</br>
 Battle is upon us. </br>
 Help win the war. </br>
+</br> </div>
 </br>
-
-<b>Create your character</b> </br>
-
+<div class="icons">
+	<b>Pick an avatar</b> </br>
 			<a id ="sword">
 				<img src="sword.gif">
 			</a>
@@ -60,36 +59,58 @@ Help win the war. </br>
 			<div id="shield">
 				<img src="shield.gif">
 			</div>
-</br>
+</div> </br>
 
-	</div>
-	</div>
-<div id="sword2">
-	<img src="sword.gif">
+<div id="name">
+<b>Pick a name</b></br>
+<div id="namecolumn1">
+<div id="name1"> LONGRUNNER </div>
+<div id="name2"> LIGHTBLADE </div>
+<div id="name3"> BARBLETHROAT </div>
+</div>
+<div id="namecolumn2">
+<div id="name4"> DOOMBRINGER </div>
+<div id="name5"> STRONGRAVEN </div>
+<div id="name6"> YOUNGBLOOD </div>
 </div>
 
+</div>
+
+
+</br>
+	</div>
+<div id="sword2">
+	<img src="sword2.gif">
+</div>
+
+<div id="name1big">
+	<b>LONGRUNNER</b>
+	</div>
+
 <div id="wand2">
-	<img src="wand.gif">
+	<img src="wand2.gif">
 </div>
 
 <div id="arrows2">
-	<img src="arrows.gif">
+	<img src="arrows2.gif">
 </div>
 
 <div id="shield2">
-	<img src="shield.gif">
+	<img src="shield2.gif">
 </div>
 
-</div>
+
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 <script type="text/javascript">
+
 		$(document).ready(function(){
 			$('#sword2').hide();
 			$('#wand2').hide();
 			$('#arrows2').hide();
 			$('#shield2').hide();
+			$('#name1big').hide();
 
 			$('#sword').on('click', function() {
 				$('#sword2').show(200);
@@ -104,7 +125,7 @@ Help win the war. </br>
 				$('#shield2').hide(200);
 				});
 			$('#arrows').on('click', function() {
-				$('#arrows2').show(200);
+				$('#arrows2').show(200);blur(200);
 				$('#sword2').hide(200);
 				$('#wand2').hide(200);
 				$('#shield2').hide(200);
@@ -112,8 +133,13 @@ Help win the war. </br>
 			$('#shield').on('click', function() {
 				$('#shield2').show(200);
 				});
-		});
 
+			$('#name1').on('click', function() {
+				$('#name1big').show(200);
+				});
+
+
+		});
 </script>
 
 
