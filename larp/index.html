@@ -86,7 +86,9 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 <div id="racecolumn2">
 <div id="race3"> ORCS </div>
 <div id="race4"> WARLOCKS </div>
+
 </div>
+<div id="finish"> OK! </div>
 
 </div>
 
@@ -151,9 +153,11 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 </br>
 </br>
 
-<div text="div">
-	This is your 
-	</div>
+<div id="bottomtext">
+	YOU HAVE CREATED YOUR CHARACTER.
+	NOW JOIN A LIVE ACTION ROLEPLAY
+	NEAR YOU AND TEST YOUR COURAGE.
+</div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
@@ -174,6 +178,7 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 			$('#race2big').hide();
 			$('#race3big').hide();
 			$('#race4big').hide();
+			$('#bottomtext').hide();
 
 			$('#sword').on('click', function() {
 				$('#sword2').fadeIn(400);
@@ -264,6 +269,9 @@ GENERATE YOUR CHARACTER AND BE A HERO.
 
 			$('#race4').on('click', function() {
 				$('#race4big').fadeIn(400);
+				});
+			$('#finish').on('click', function() {
+				$('#bottomtext').fadeIn(400);
 				});
 
 		});
