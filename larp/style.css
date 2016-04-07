@@ -72,7 +72,7 @@ body {
 }
 
 #name1 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -99,7 +99,7 @@ body {
 }
 
 #name2 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -125,7 +125,7 @@ body {
 }
 
 #name3 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -151,7 +151,7 @@ body {
 }
 
 #name4 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -177,7 +177,7 @@ body {
 }
 
 #name5 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -203,7 +203,7 @@ body {
 }
 
 #name6 {
-	width: 350;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -250,7 +250,7 @@ body {
 	position:relative;
 }
 #race1 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
@@ -277,10 +277,16 @@ body {
 }
 
 #race2 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
+}
+
+#race2:hover{
+	color: white;
+	background-color:black;
+	cursor: crosshair;
 }
 
 #race2big{
@@ -298,10 +304,16 @@ body {
 }
 
 #race3 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
+}
+
+#race3:hover{
+	color: white;
+	background-color:black;
+	cursor: crosshair;
 }
 
 #race3big{
@@ -319,10 +331,16 @@ body {
 }
 
 #race4 {
-	width: 350px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	position: relative;
+}
+
+#race4:hover{
+	color: white;
+	background-color:black;
+	cursor: crosshair;
 }
 
 #race4big{
