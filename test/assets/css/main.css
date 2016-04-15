@@ -1,0 +1,22 @@
+.container {
+	width: 953px;
+	height: 3000px;
+	background-color: black;
+	position: relative;
+	margin: auto;
+}
+
+.nav {
+	width: 953px;
+	position: fixed;
+	z-index: 2;
+	margin-top: 0px;
+}
+
+.content {
+	width: 953px;
+	top: 220px;
+	background-color: black;
+	position: relative;
+	z-index: 1;
+}
