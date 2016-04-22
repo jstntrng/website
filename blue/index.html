@@ -2,26 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
-    <title>Breakpoints</title>
+    <title>Blue</title>
     <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-	<img class="l mobile-only" src="images/hero.jpg">
+<ul class="navigation">
+    <li class="nav-item"><a href="#about">about</a></li>
+    <li class="nav-item"><a href="#get">getblue</a></li>
+    <li class="nav-item"><a href="#exp">experiences</a></li>
+    <li class="nav-item"><a href="#contact">contact</a></li>
+</ul>
 
-	<div class="text">
-	<h1>Chill Wildlife</h1>
-	<h2>These photographs were stolen from the  instagram <a href="https://www.instagram.com/chillwildlife/" target="blank">@chillwildlife</a>. The account shows images of animals embodying human behaviors — sitting in a chair, wearing clothing, getting haircuts — while appearing very nonchalant. Several have been selected so we can stare at dogs for the next 30 minutes.</h2>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<label for="nav-trigger"></label>
+
+<div class="site-wrap">
+    
+
+	<div class="navbar"> 
+		<div class="logo"> 
+			<h1> blue </h1> 
+		</div>
+		<div class="nav">
+			<ul class="navcontent">
+				<li id="navabout"><a href="#about">about</li>
+				<li id="navget"><a href="#get">getblue</li>
+				<li id="navexp"><a href="#exp">experiences</li>
+				<li id="navcontact"><a href="#contact">contact</li>
+			</ul>
+		</div>
+	</div>
+
+
+<ul class="flex-container">
+  <li id="about"></li>
+  <li id="get"></li>
+  <li id="exp"></li>
+  <li id="contact"></li>
+</ul>
+
 </div>
 
-<div class="img-grid">
-	<img class="s" src="images/1.jpg">
-	<img class="s" src="images/2.jpg">
-	<img class="s" src="images/3.jpg">
-	<img class="s" src="images/4.jpg">
-</div>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('#about').show();
+  $('#get').show();
+  $('#exp').show();
+  $('#contact').show();
+
+  $('#navabout').on('click', function() {
+      $('#about').css({ opacity: 1 });
+      $('#get').css({ opacity: 0.5 });
+      $('#exp').css({ opacity: 0.5 });
+      $('#contact').css({ opacity: 0.5 });
+      });
+  $('#navget').on('click', function() {
+      $('#get').css({ opacity: 1 });
+      $('#about').css({ opacity: 0.5 });
+      $('#exp').css({ opacity: 0.5 });
+      $('#contact').css({ opacity: 0.5 });
+      });
+  $('#navexp').on('click', function() {
+      $('#exp').css({ opacity: 1 });
+      $('#get').css({ opacity: 0.5 });
+      $('#about').css({ opacity: 0.5 });
+      $('#contact').css({ opacity: 0.5 });
+
+      });
+  $('#navcontact').on('click', function() {
+      $('#contact').css({ opacity: 1 });
+      $('#get').css({ opacity: 0.5 });
+      $('#exp').css({ opacity: 0.5 });
+      $('#about').css({ opacity: 0.5 });
+
+      });
+
+});
 
 
+
+</script>
 </body>
 </html>
