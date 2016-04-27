@@ -1,92 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <title>Blue</title>
-    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8"> 
+  <title>Blue</title>
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<ul class="navigation">
-    <li class="nav-item"><a href="#about">about</a></li>
-    <li class="nav-item"><a href="#get">getblue</a></li>
-    <li class="nav-item"><a href="#exp">experiences</a></li>
-    <li class="nav-item"><a href="#contact">contact</a></li>
-</ul>
-
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-	<label for="nav-trigger"></label>
-
-<div class="site-wrap">
-    
-
-	<div class="navbar"> 
-		<div class="logo"> 
-			<h1> blue </h1> 
-		</div>
-		<div class="nav">
-			<ul class="navcontent">
-				<li id="navabout"><a href="#about">about</li>
-				<li id="navget"><a href="#get">getblue</li>
-				<li id="navexp"><a href="#exp">experiences</li>
-				<li id="navcontact"><a href="#contact">contact</li>
-			</ul>
-		</div>
-	</div>
-
-
-<ul class="flex-container">
-  <li id="about"></li>
-  <li id="get"></li>
-  <li id="exp"></li>
-  <li id="contact"></li>
-</ul>
-
+<div id="header-wrap">
+<div id="header" class="clear">
+  <nav>
+   <div class="drawer">
+  <ul class="navigation">
+    <li id="navabout"><a href="#about">about</a></li>
+    <li id="navget"><a href="#get">getblue</a></li>
+    <li id="navexp"><a href="#exp">experiences</a></li>
+    <li id="navcontact"><a href="#contact">contact</a></li>
+  </ul>
+</div>
+        </nav>
+  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<img class="">
 
-<script type="text/javascript">
 
-$(document).ready(function(){
+    <ul class="flex-container">
+      <li id="about"> <img src="logo.gif"></li>
+      <li id="about2"><img src="heike.gif"></li>
+      <li id="about3"><img src="ben.gif"></li>
+      <li id="about4"><img src="heike.gif"></li>
+      <li id="get"><img src="ben.gif"></li>
+      <li id="get2"><img src="logo.gif"></li>
+      <li id="get3"><img src="heike.gif"></li>
+      <li id="get4"><img src="logo.gif"></li>
+      <li id="exp"><img src="heike.gif"></li>
+      <li id="exp2"><img src="ben.gif"></li>
+      <li id="exp3"><img src="logo.gif"></li>
+      <li id="exp4"><img src="heike.gif"></li>
+      <li id="contact"><img src="ben.gif"></li>
+      <li id="contact2"><img src="heike.gif"></li>
+      <li id="contact3"><img src="ben.gif"></li>
+      <li id="contact4"><img src="logo.gif"></li>
+    </ul>
 
-  $('#about').show();
-  $('#get').show();
-  $('#exp').show();
-  $('#contact').show();
 
-  $('#navabout').on('click', function() {
-      $('#about').css({ opacity: 1 });
-      $('#get').css({ opacity: 0.5 });
-      $('#exp').css({ opacity: 0.5 });
-      $('#contact').css({ opacity: 0.5 });
-      });
-  $('#navget').on('click', function() {
-      $('#get').css({ opacity: 1 });
-      $('#about').css({ opacity: 0.5 });
-      $('#exp').css({ opacity: 0.5 });
-      $('#contact').css({ opacity: 0.5 });
-      });
-  $('#navexp').on('click', function() {
-      $('#exp').css({ opacity: 1 });
-      $('#get').css({ opacity: 0.5 });
-      $('#about').css({ opacity: 0.5 });
-      $('#contact').css({ opacity: 0.5 });
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
-      });
-  $('#navcontact').on('click', function() {
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
       $('#contact').css({ opacity: 1 });
+      $('#contact2').css({ opacity: 1 });
+      $('#contact3').css({ opacity: 1 });
+      $('#contact4').css({ opacity: 1 });
+      $('#get').css({ opacity: 1 });
+      $('#get2').css({ opacity: 1 });
+      $('#get3').css({ opacity: 1 });
+      $('#get4').css({ opacity: 1 });
+      $('#exp').css({ opacity:1 });
+      $('#exp2').css({ opacity: 1 });
+      $('#exp3').css({ opacity: 1 });
+      $('#exp4').css({ opacity: 1 });
+      $('#about').css({ opacity:1 });
+      $('#about2').css({ opacity: 1 });
+      $('#about3').css({ opacity: 1 });
+      $('#about4').css({ opacity: 1 });
+
+    $('#navabout').on('click', function() {
+      $('#about').css({ opacity: 1 });
+      $('#about2').css({ opacity: 1 });
+      $('#about3').css({ opacity: 1 });
+      $('#about4').css({ opacity: 1 });
       $('#get').css({ opacity: 0.5 });
+      $('#get2').css({ opacity: 0.5 });
+      $('#get3').css({ opacity: 0.5 });
+      $('#get4').css({ opacity: 0.5 });
       $('#exp').css({ opacity: 0.5 });
+      $('#exp2').css({ opacity: 0.5 });
+      $('#exp3').css({ opacity: 0.5 });
+      $('#exp4').css({ opacity: 0.5 });
+      $('#contact').css({ opacity: 0.5 });
+      $('#contact2').css({ opacity: 0.5 });
+      $('#contact3').css({ opacity: 0.5 });
+      $('#contact4').css({ opacity: 0.5 });
+
+    });
+    $('#navget').on('click', function() {
+      $('#get').css({ opacity: 1 });
+      $('#get2').css({ opacity: 1 });
+      $('#get3').css({ opacity: 1 });
+      $('#get4').css({ opacity: 1 });
       $('#about').css({ opacity: 0.5 });
+      $('#about2').css({ opacity: 0.5 });
+      $('#about3').css({ opacity: 0.5 });
+      $('#about4').css({ opacity: 0.5 });
+      $('#exp').css({ opacity: 0.5 });
+      $('#exp2').css({ opacity: 0.5 });
+      $('#exp3').css({ opacity: 0.5 });
+      $('#exp4').css({ opacity: 0.5 })
+      $('#contact').css({ opacity: 0.5 });
+      $('#contact2').css({ opacity: 0.5 });
+      $('#contact3').css({ opacity: 0.5 });
+      $('#contact4').css({ opacity: 0.5 });
 
-      });
+    });
+    $('#navexp').on('click', function() {
+      $('#exp').css({ opacity: 1 });
+      $('#exp2').css({ opacity: 1 });
+      $('#exp3').css({ opacity: 1 });
+      $('#exp4').css({ opacity: 1 });
+      $('#get').css({ opacity: 0.5 });
+      $('#get2').css({ opacity: 0.5 });
+      $('#get3').css({ opacity: 0.5 });
+      $('#get4').css({ opacity: 0.5 });
+      $('#about').css({ opacity: 0.5 });
+      $('#about').css({ opacity: 0.5 });
+      $('#about2').css({ opacity: 0.5 });
+      $('#about3').css({ opacity: 0.5 });
+      $('#about4').css({ opacity: 0.5 });
+      $('#contact').css({ opacity: 0.5 });
+      $('#contact2').css({ opacity: 0.5 });
+      $('#contact3').css({ opacity: 0.5 });
+      $('#contact4').css({ opacity: 0.5 });
 
+    });
+    $('#navcontact').on('click', function() {
+      $('#contact').css({ opacity: 1 });
+      $('#contact2').css({ opacity: 1 });
+      $('#contact3').css({ opacity: 1 });
+      $('#contact4').css({ opacity: 1 });
+      $('#get').css({ opacity: 0.5 });
+      $('#get2').css({ opacity: 0.5 });
+      $('#get3').css({ opacity: 0.5 });
+      $('#get4').css({ opacity: 0.5 });
+      $('#exp').css({ opacity: 0.5 });
+      $('#exp2').css({ opacity: 0.5 });
+      $('#exp3').css({ opacity: 0.5 });
+      $('#exp4').css({ opacity: 0.5 });
+      $('#about').css({ opacity: 0.5 });
+      $('#about2').css({ opacity: 0.5 });
+      $('#about3').css({ opacity: 0.5 });
+      $('#about4').css({ opacity: 0.5 });
+
+
+    });
+
+    var previousScroll = 0,
+    headerOrgOffset = $('#header').offset().top;
+
+    $('#header-wrap').height($('#header').height());
+
+    $(window).scroll(function() {
+     var currentScroll = $(this).scrollTop();
+    console.log(currentScroll + " and " + previousScroll + " and " + headerOrgOffset);
+    if(currentScroll > headerOrgOffset) {
+        if (currentScroll > previousScroll) {
+            $('#header').fadeOut();
+        } else {
+            $('#header').fadeIn();
+            $('#header').addClass('fixed');
+        }
+    } else {
+         $('#header').removeClass('fixed');   
+    }
+    previousScroll = currentScroll;
 });
 
 
+  });
 
-</script>
+
+
+  </script>
 </body>
 </html>

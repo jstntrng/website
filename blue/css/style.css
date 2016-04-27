@@ -2,9 +2,10 @@
 
 body {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	font-family: sans-serif;
 	background: black;
+  overflow-x: hidden;
 
 }
 
@@ -21,9 +22,21 @@ a:hover {
 }
 
 
-:target {
-  animation: highlight 1s ease;     
+#header {
+    width: 100%;
+    z-index: 100;
+    height:30%;
 }
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+#header-wrap {
+    position: relative;
+}
+
 
 .flex-container {
   top: 100px;
@@ -41,17 +54,8 @@ a:hover {
   background: black;
 }
 
-#flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-  line-height: 150px;
-}
-
 #about {
-  background: tomato;
+  background: cyan;
   padding: 5px;
   width: 300px;
   height: 300px;
@@ -59,10 +63,63 @@ a:hover {
   line-height: 150px;
 }
 
+#about2 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#about3 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#about4 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
 
 
 #get {
-  background: tomato;
+  background:cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#get2 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#get3 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#get4 {
+  background: cyan;
   padding: 5px;
   width: 300px;
   height: 300px;
@@ -72,7 +129,7 @@ a:hover {
 
 
 #exp {
-  background: tomato;
+  background: cyan;
   padding: 5px;
   width: 300px;
   height: 300px;
@@ -80,9 +137,35 @@ a:hover {
   line-height: 150px;
 }
 
+#exp2 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#exp3 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#exp4 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
 
 #contact {
-  background: tomato;
+  background: cyan;
   padding: 5px;
   width: 300px;
   height: 300px;
@@ -90,27 +173,42 @@ a:hover {
   line-height: 150px;
 }
 
-
-.navigation {
-    background: black;
-    width: 100%;
-    position: fixed;
-    z-index: 0;
-    color: white;
-    list-style-type: none;
-    font-size: 1.5em;
-    padding-left: 30px;
-    top: 100px;
+#contact2 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
 }
 
-.site-wrap {
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    top: 0;
-    bottom: 100%;
-    left: 0;
-    z-index: 1;
+#contact3 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+#contact4 {
+  background: cyan;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    color: white;
+    list-style-type: none;
+    font-size:1.7em;
+    padding-left: 25px;
+    z-index: 3;
+    background-color: black;
 }
 
 .navbar {
@@ -119,118 +217,55 @@ a:hover {
 	position: fixed;
 	background: black;
 	color: white;
-	z-index: 5;
+	z-index: 2;
 }
 
-.nav-trigger {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-}
-
-label[for="nav-trigger"] {
-    position: fixed;
-    top: 15px;
-    left: 0px;
-    z-index: 2;
-}
-
-label[for="nav-trigger"] {
-    /* ... previous styles here... */
-    display: none;
-    top: 20px;
-    left: 15px;
-    width: 24px;
-    height: 25px;
-    cursor: pointer;
-    background-image: url("icon.svg");
-    background-size: 24px 25px;
-}
-
-.nav-trigger:checked + label {
-    left: 215px;
-    height:25px;
-    background-image: url("x.svg");
-    background-size: 24px 25px;
-}
-
-.nav-trigger:checked ~ .site-wrap {
-    left: 200px;
-}
-
-.nav-trigger + label, .site-wrap {
-    transition: left 0.2s;
-}
-
-body {
-    overflow-x: hidden;
-}
 
 .logo {
 	font-size: 1.5em;
-	padding-left: 3em;
-	float: left;
 	position: relative;
-}
-
-.nav{
-	display: block;
-	float: right;
-	position: relative;
-	padding-right: 3em;
+  width: 100%;
+  padding-left: 60px;
 }
 
 
-.navcontent {
-	background: black;
-	font-size: 1.5em;
-	padding-top: 1em;
-}
-
-#navcontentlink {
-	color: white;
-	display: inline;
-	padding-right: 1em;
-	list-style-type: none;
-
-
-}
 
 #navget {
   color: white;
-  display: inline;
   padding-right: 1em;
   list-style-type: none;
-
-
+  display: inline;
 }
 
 #navexp {
   color: white;
-  display: inline;
   padding-right: 1em;
   list-style-type: none;
+  display: inline;
 
 
 }
 
 #navcontact {
   color: white;
-  display: inline;
   padding-right: 1em;
   list-style-type: none;
-
+  display: inline;
 
 }
 
 #navabout {
   color: white;
-  display: inline;
   padding-right: 1em;
   list-style-type: none;
+  display: inline;
 }
 
 
-
+  #image1 {
+    width: 500px;
+    height: 500px;
+  }
 
 
 
@@ -239,24 +274,14 @@ body {
 
 @media screen and (max-width: 768px) {
 
-.nav{
-	display: none;
-}
+  #image1 {
+    width: 200px;
+    height: 200px;
+  }
 
-label[for="nav-trigger"] {
-	display: block;
-}
 
 /* Mobile
 -------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
 
-.nav{
-	display: none;
-
-}
-
-label[for="nav-trigger"] {
-	display: block;
-}
