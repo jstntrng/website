@@ -1,21 +1,38 @@
 @import "compass/css3";
+@font-face {
+  font-family: "heimatlight";
+  src:url("heimatlight.otf");
+}
+
+@font-face {
+  font-family: "heimatbold";
+  src:url("heimatbold.otf");
+}
+
 
 body {
 	padding: 0;
 	margin: 0 auto;
-	font-family: sans-serif;
-	background: black;
+	font-family: 'heimatlight';
+	background: white;
   overflow-x: hidden;
 
 }
 
-a {
-	color: white;
+.logo {
+  float: left;
+  position: relative;
+  padding-right: 50px;
+}
+
+#navlink {
+	color: black;
 	text-decoration: none;
+  font-family: 'heimatbold';
 
 }
 
-a:hover {
+#navlink:hover {
 	text-shadow: 0 0 5px #98ffea;
     color: transparent;
     cursor: pointer;
@@ -51,7 +68,7 @@ a:hover {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  background: black;
+  background: white;
 }
 
 #about {
@@ -59,7 +76,6 @@ a:hover {
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
 #about2 {
@@ -67,7 +83,6 @@ a:hover {
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
 #about3 {
@@ -75,7 +90,6 @@ a:hover {
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
 #about4 {
@@ -83,136 +97,133 @@ a:hover {
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
+}
+
+#about5 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+#about6 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+#about7 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+#about8 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
 }
 
 
 #get {
-
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
+
 
 #get2 {
-
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
-}
-
-#get3 {
- 
-  padding: 5px;
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-  line-height: 150px;
-}
-
-#get4 {
-
-  padding: 5px;
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-  line-height: 150px;
 }
 
 
 #exp {
-
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
 #exp2 {
-
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
 #exp3 {
-
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
 #exp4 {
-
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
-#contact {
 
+#get3 {
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
-#contact2 {
-
+#get4 {
   padding: 5px;
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  line-height: 150px;
 }
 
-#contact3 {
+#type {
+  font-size: 2em;
+  line-height: 1.2em;
+  position: relative;
+  padding: 10px;
+  text-shadow: 0 0 10px black;
+  color: transparent;
+  cursor: pointer;
 
-  padding: 5px;
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-  line-height: 150px;
 }
 
-#contact4 {
-
-  padding: 5px;
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-  line-height: 150px;
-}
+#type:hover{
+  cursor: default;
+  text-shadow: 0 0 0px black;
+  color: transparent;
+  }
 
 .navigation {
     width: 100%;
     position: fixed;
-    color: white;
+    color: black;
     list-style-type: none;
     font-size:1.7em;
     padding-left: 25px;
     z-index: 3;
-    background-color: black;
+    background-color: white;
+    height: 50px;
+    padding-top: 20px;
+    margin: 0;
 }
 
 .navbar {
 	width: 100%;
 	height: 20%;
 	position: fixed;
-	background: black;
-	color: white;
+	background: white;
+	color: black;
 	z-index: 2;
 }
 
