@@ -48,7 +48,6 @@ html, body {
 }
 
 
-
 .navigation {
 	margin: 0 auto;
 	width: 80%;
@@ -100,6 +99,7 @@ a:hover{
 
 
 img {
+	margin: 0 auto;
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
@@ -149,7 +149,15 @@ p {
 
 }
 
+.headline3 {
+	font-family: 'suisse';
+	font-size: 1.5em;
+	line-height: 1.8em;
+	color: #1a1a1a;
+}
+
 .divider {
+	width: 100%;
 	margin: 0 auto;
 	height: 2px;
 	background-color: black;
