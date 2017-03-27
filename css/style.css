@@ -67,6 +67,11 @@ html, body {
 
 	}
 
+a:hover{
+		color:white;
+		background-color: #ff6600;
+}
+
 .navigation a:hover{
 	color:white;
 	background-color: #ff6600;
