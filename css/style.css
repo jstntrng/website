@@ -65,8 +65,8 @@ header ul {
 
 
 .biggestcontainer {
-	width: 80%;
-	height: 85%;
+	max-width: 1200px;
+	height: 100%;
 	margin: 0 auto;
 	position: relative;
 	z-index: 0;
@@ -94,6 +94,7 @@ a:hover{
 
 
 .box2{
+	max-width: 1200px;
 	padding-top: 5%;
 	width: 80%;
 	height: 100%;
@@ -121,11 +122,11 @@ p {
 
 .imagebox {
 	position: relative;
-	max-width: 100%;
+	max-width: 1200px;
+	padding: 0;
 	margin: 0 auto;
     height: auto;
     width: auto\9;
-    background-color: black;
 }
 
 .videoWrapper {
@@ -169,6 +170,7 @@ p {
 	margin: 0 auto;
 	height: 2px;
 	background-color: black;
+	max-width: 1200px;
 }
 
 
