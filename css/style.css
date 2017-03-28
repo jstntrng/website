@@ -35,20 +35,6 @@ html, body {
 	z-index: 0;
 }
 
-
-.nav2 {
-  background: black;
-  text-align: center;
-  color: #ffffff;
-  padding(20px null);
-  position(fixed, null 0px 0px 0px);
-  transition(transform 1s $ease-in-out-quint);
-}
-
-.nav2.hidden {
-  transform(translateY(100%));
-}
-
 .nav{
 	width: 80%;
 	height: 10%;
@@ -186,4 +172,9 @@ p {
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+}
+
+.headline3 {
+	font-size: 1em;
+	line-height: 1.2em;
 }
