@@ -13,9 +13,10 @@
   src:url("suisse.otf");
 }
 
+* { color: transparent}
 
 body {
-	padding-top: 40px;
+	padding-top: 60px;
 	margin: 0 auto;
 	background: white;
   	overflow-x: hidden;
@@ -23,7 +24,43 @@ body {
 
 html, body {
     height: 100%;
- 	margin: 0 auto;
+}
+
+header {
+    background: black;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    color: white;
+    z-index:10;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+
+}
+
+li a {
+	font-family: 'suisse';
+	font-size: .5em;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	width: 25%;
+	padding-top: 10px;
+}
+
+header ul {
+	list-style: none;
+	width: 80%;
+	margin: auto;
+}
+
+
+.nav-up {
+    top: -60px;
 }
 
 
@@ -35,37 +72,17 @@ html, body {
 	z-index: 0;
 }
 
-.nav{
-	width: 80%;
-	height: 10%;
-	margin: 0 auto;
-	position: fixed;
-	background: white;
-	z-index: 5;
-}
-
-
-.navigation {
-	margin: 0 auto;
-	width: 80%;
-	padding-top: 2%;
+.headline2 a {
+	padding-top: 10px;
 	font-family: 'suisse';
-	font-size: .4em;
+	font-size: 1em;
 	color: black;
-
-}
-
-.navigation a{
 	text-decoration: none;
-	font-family: 'suisse';
-	font-size: .4em;
-	color: #69d4d8;
-
-	}
+	
+}
 
 a:hover{
-		color:white;
-		background-color: #ff6600;
+	color:white;
 }
 
 .navigation a:hover{
@@ -73,16 +90,6 @@ a:hover{
 	background-color: #ff6600;
 	}
 
-
-#navlink {
-	text-decoration: none;
-	font-size: .5em;
-}
-
-#navlink2 {
-	text-decoration: none;
-	font-size: .5em;
-}
 
 
 
@@ -113,7 +120,9 @@ p {
 }
 
 .imagebox {
+	position: relative;
 	max-width: 100%;
+	margin: 0 auto;
     height: auto;
     width: auto\9;
     background-color: black;
@@ -125,6 +134,7 @@ p {
 	padding-top: 25px;
 	height: 0;
 }
+
 .videoWrapper iframe {
 	position: absolute;
 	left: 5%;
@@ -160,6 +170,8 @@ p {
 	height: 2px;
 	background-color: black;
 }
+
+
 
 /* Mobile
 -------------------------------------------------- */
