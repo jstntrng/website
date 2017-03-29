@@ -13,12 +13,10 @@
   src:url("suisse.otf");
 }
 
-* { color: transparent}
-
 body {
 	padding-top: 60px;
 	margin: 0 auto;
-	background: white;
+	background: black;
   	overflow-x: hidden;
 }
 
@@ -27,40 +25,52 @@ html, body {
 }
 
 header {
-    background: black;
-    height: 60px;
+    background: white;
+    height: 120px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
-    color: white;
+    /*color: white;*/
     z-index:10;
     left: 50%;
     transform: translate(-50%, 0);
 
-
 }
-
-li a {
-	font-family: 'suisse';
-	font-size: .5em;
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	float: left;
-	width: 25%;
+.navigation {
+	width: 400px;
 	padding-top: 10px;
+	float: right;
 }
 
-header ul {
+.navigation ul {
+	font-family: 'suisse';
+	font-size: 1em;
+	color: black;
+	text-decoration: none;
 	list-style: none;
+	padding-top: 50px;
+	text-align: right;
+}
+
+.navigation li {
+	float: left;
+	padding-left: 2;
+}
+
+.logo {
+	top:10%;
 	width: 80%;
-	margin: auto;
+	height: auto;
+	float: left;
+	left: 50%;
+	transform:translate(-50%,0);
+	position: absolute;
 }
 
 
 .nav-up {
-    top: -60px;
+    top: -120px;
 }
 
 
@@ -76,7 +86,7 @@ header ul {
 	padding-top: 10px;
 	font-family: 'suisse';
 	font-size: 1em;
-	color: black;
+	color: white;
 	text-decoration: none;
 	
 }
@@ -114,10 +124,10 @@ img {
 
 p {
 	margin: 0 auto;
-	font-size: .8em;
+	font-size: 1.2em;
 	line-height: 1.5em;
 	font-family: 'founder';
-	color: #1a1a1a;
+	color: white;
 }
 
 .imagebox {
@@ -126,6 +136,7 @@ p {
 	padding: 0;
 	margin: 0 auto;
     height: auto;
+    background-color: black;
     width: auto\9;
 }
 
@@ -146,7 +157,7 @@ p {
 .headline {
 	font-family: 'founderitalic';
 	font-size: 1em;
-	color: #1a1a1a;
+	color: white;
 
 }
 
@@ -154,7 +165,7 @@ p {
 	font-family: 'suisse';
 	font-size: 1em;
 	line-height: 1.4em;
-	color: #1a1a1a;
+	color: white;
 
 }
 
@@ -162,14 +173,14 @@ p {
 	font-family: 'suisse';
 	font-size: 1.5em;
 	line-height: 1.8em;
-	color: #1a1a1a;
+	color: white;
 }
 
 .divider {
 	width: 100%;
 	margin: 0 auto;
 	height: 2px;
-	background-color: black;
+	background-color: white;
 	max-width: 1200px;
 }
 
@@ -186,6 +197,10 @@ p {
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+}
+
+.logo {
+	width: 90%;
 }
 
 .headline3 {
