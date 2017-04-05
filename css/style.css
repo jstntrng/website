@@ -16,7 +16,7 @@
 body {
 	padding-top: 60px;
 	margin: 0 auto;
-	background: black;
+	background: white;
   	overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ html, body {
 
 header {
     background: white;
-    height: 120px;
+    height: 110px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -38,30 +38,43 @@ header {
 
 }
 .navigation {
-	width: 400px;
-	padding-top: 10px;
-	float: right;
+	width: 238px;
+	height:100px;
+	top: 78px;
+	left: 50%;
+	position: absolute;
+	transform:translate(-50%,0);
 }
 
-.navigation ul {
+.last {
+	margin-right: -45px;
+}
+
+ul {
 	font-family: 'suisse';
-	font-size: 1em;
-	color: black;
+	font-size: .7em;
+	color: white;
 	text-decoration: none;
-	list-style: none;
-	padding-top: 50px;
+	width: auto;
 	text-align: right;
+	list-style: none;
+	padding:0;
 }
 
-.navigation li {
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
 	float: left;
-	padding-left: 2;
+	margin-right: 48px;
 }
 
 .logo {
-	top:10%;
-	width: 80%;
-	height: auto;
+	top: 8%;
+	width: 40px;
+	height: 60px;
 	float: left;
 	left: 50%;
 	transform:translate(-50%,0);
@@ -70,56 +83,67 @@ header {
 
 
 .nav-up {
-    top: -120px;
+    top: -110px;
 }
 
 
 .biggestcontainer {
 	max-width: 1200px;
 	height: 100%;
-	margin: 0 auto;
-	position: relative;
+	position: absolute;
 	z-index: 0;
+	float: left;
+	left: 50%;
+	transform:translate(-50%,0);
 }
 
-.headline2 a {
-	padding-top: 10px;
-	font-family: 'suisse';
-	font-size: 1em;
-	color: white;
-	text-decoration: none;
-	
-}
-
-a:hover{
-	color:white;
-}
-
-.navigation a:hover{
-	color:white;
-	background-color: #ff6600;
-	}
-
-
-
-
-.box2{
+.content{
 	max-width: 1200px;
-	padding-top: 5%;
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
+	padding-top: 70px;
+	height: 3000px;
 	position: relative;
 }
-
 
 img {
-	margin: 0 auto;
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
 }
 
+
+.imageboxset {
+	position: relative;
+	float: left;
+    width: 600px;
+    height: 350px;
+}
+
+.imagebox1 {
+    max-width: 100%;
+    height: 100%;
+    background-image: url('test.jpg');
+    background-size: 100%;
+}
+
+
+
+.headline2 a {
+	padding-top: 10px;
+	font-family: 'suisse';
+	font-size: 1em;
+	color: black;
+	text-decoration: none;
+	
+}
+
+a:hover{
+	color:black;
+}
+
+.navigation a:hover{
+	color:black;
+	background-color: #ff6600;
+	}
 
 
 p {
@@ -128,30 +152,6 @@ p {
 	line-height: 1.5em;
 	font-family: 'founder';
 	color: white;
-}
-
-.imagebox {
-	position: relative;
-	max-width: 1200px;
-	padding: 0;
-	margin: 0 auto;
-    height: auto;
-    background-color: black;
-    width: auto\9;
-}
-
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-
-.videoWrapper iframe {
-	position: absolute;
-	left: 5%;
-	width: 90%;
-	height: 90%;
 }
 
 .headline {
@@ -179,8 +179,8 @@ p {
 .divider {
 	width: 100%;
 	margin: 0 auto;
-	height: 2px;
-	background-color: white;
+	height: 1px;
+	background-color: whitek;
 	max-width: 1200px;
 }
 
@@ -192,15 +192,11 @@ p {
 @media screen and (max-width: 768px) {
 
 .box2{
-	padding-top: 10%;
+	padding-top: 12%;
 	width: 90%;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
-}
-
-.logo {
-	width: 90%;
 }
 
 .headline3 {
