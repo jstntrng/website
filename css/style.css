@@ -61,14 +61,18 @@ ul {
 	padding:0;
 }
 
+li {
+	float: left;
+	margin-right: 48px;
+}
+
 a {
 	text-decoration: none;
 	color: black;
 }
 
-li {
-	float: left;
-	margin-right: 48px;
+.nav-up {
+    top: -110px;
 }
 
 .logo {
@@ -81,27 +85,27 @@ li {
 	position: absolute;
 }
 
-
-.nav-up {
-    top: -110px;
-}
+/*start of containers
+*/
 
 
 .biggestcontainer {
-	max-width: 1200px;
-	height: 100%;
+	max-width: 1250px;
+	width: 100%;
 	position: absolute;
 	z-index: 0;
-	float: left;
 	left: 50%;
+	height:100%;
 	transform:translate(-50%,0);
 }
 
 .content{
 	max-width: 1200px;
+	width: 100%;
 	padding-top: 70px;
-	height: 3000px;
-	position: relative;
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%,0);
 }
 
 img {
@@ -110,78 +114,102 @@ img {
     width: auto\9; /* ie8 */
 }
 
+#biolumina {
+	max-width: 100%;
+	height: 400px;
+	background: url(biolumina.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow:hidden;
+	opacity: 1;
+	padding-bottom: 10px;
+}
 
-.imageboxset {
+
+#overlay {
 	position: relative;
-	float: left;
-    width: 600px;
-    height: 350px;
+	opacity: 0;
+	text-align:center;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	top: 40%;
+    -webkit-transform: translateY(-40%,0);
+    -ms-transform: translateY(-40%,0);
+    transform: translateY(-40%,0);
 }
 
-.imagebox1 {
-    max-width: 100%;
-    height: 100%;
-    background-image: url('test.jpg');
-    background-size: 100%;
+
+#biolumina:hover #overlay {
+     opacity: 1;
+}
+
+#plus{  
+	font-family: 'founder';
+    color: white;
+    font-size:96px;
+}
+
+
+#tbd {
+	max-width: 100%;
+	height: 400px;
+	background: url(tbd.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow:hidden;
+	opacity: 1;
+}
+
+
+#overlay2 {
+	position: relative;
+	opacity: 0;
+	text-align:center;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	top: 40%;
+    -webkit-transform: translateY(-40%,0);
+    -ms-transform: translateY(-40%,0);
+    transform: translateY(-40%,0);
+}
+
+
+#tbd:hover #overlay2 {
+     opacity: 1;
+}
+
+#tbdcaption{  
+	font-family: 'founder';
+    color: white;
+    font-size:96px;
 }
 
 
 
-.headline2 a {
-	padding-top: 10px;
-	font-family: 'suisse';
-	font-size: 1em;
-	color: black;
-	text-decoration: none;
-	
-}
 
-a:hover{
-	color:black;
-}
 
 .navigation a:hover{
-	color:black;
+	color: black;
 	background-color: #ff6600;
-	}
+}
 
 
 p {
+	padding: 50px;
 	margin: 0 auto;
-	font-size: 1.2em;
+	font-size: 2em;
 	line-height: 1.5em;
 	font-family: 'founder';
-	color: white;
+	color: black;
 }
 
 .headline {
+	width: 80%;
 	font-family: 'founderitalic';
 	font-size: 1em;
-	color: white;
-
-}
-
-.headline2 {
-	font-family: 'suisse';
-	font-size: 1em;
-	line-height: 1.4em;
-	color: white;
-
-}
-
-.headline3 {
-	font-family: 'suisse';
-	font-size: 1.5em;
-	line-height: 1.8em;
-	color: white;
-}
-
-.divider {
-	width: 100%;
-	margin: 0 auto;
-	height: 1px;
-	background-color: whitek;
-	max-width: 1200px;
+	color: black;
 }
 
 
@@ -190,16 +218,26 @@ p {
 -------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+	#biolumina{
+		height:300px;
+	}
 
-.box2{
-	padding-top: 12%;
-	width: 90%;
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-}
+	#tbd{
+		height:300px;
+	}
 
-.headline3 {
-	font-size: 1.2em;
-	line-height: 1.5em;
-}
+@media screen and (max-width: 414px) {
+	#biolumina{
+		height:200px;
+	}
+	#tbd{
+		height:200px;
+	}
+
+@media screen and (max-width: 320px) {
+	#biolumina{
+		height:150px;
+	}
+		#tbd{
+		height:150px;
+	}
