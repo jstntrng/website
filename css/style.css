@@ -221,12 +221,151 @@ img {
     font-size:96px;
 }
 
+#umbrella {
+	max-width: 100%;
+	height: 400px;
+	background: url(umbrella.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow:hidden;
+	opacity: 1;
+}
+
+
+#overlay3 {
+	position: relative;
+	opacity: 0;
+	text-align:center;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	top: 40%;
+    -webkit-transform: translateY(-40%,0);
+    -ms-transform: translateY(-40%,0);
+    transform: translateY(-40%,0);
+}
+
+
+#umbrella:hover #overlay3 {
+     opacity: 1;
+}
+
+#umbrellacaption{  
+	font-family: 'founder';
+    color: white;
+    font-size:96px;
+}
+
+#icons {
+	max-width: 100%;
+	height: 400px;
+	background: url(icons.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow:hidden;
+	opacity: 1;
+}
+
+
+#overlay4 {
+	position: relative;
+	opacity: 0;
+	text-align:center;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	top: 40%;
+    -webkit-transform: translateY(-40%,0);
+    -ms-transform: translateY(-40%,0);
+    transform: translateY(-40%,0);
+}
+
+
+#icons:hover #overlay4 {
+     opacity: 1;
+}
+
+#iconscaption{  
+	font-family: 'founder';
+    color: white;
+    font-size:96px;
+}
+
+#poem {
+	max-width: 100%;
+	height: 400px;
+	background: url(poem.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow:hidden;
+	opacity: 1;
+}
+
+
+#overlay5 {
+	position: relative;
+	opacity: 0;
+	text-align:center;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	top: 40%;
+    -webkit-transform: translateY(-40%,0);
+    -ms-transform: translateY(-40%,0);
+    transform: translateY(-40%,0);
+}
+
+
+#poem:hover #overlay5 {
+     opacity: 1;
+}
+
+#poemcaption{  
+	font-family: 'founder';
+    color: white;
+    font-size:96px;
+}
+
+#active {
+	max-width: 100%;
+	height: 400px;
+	background: url(active.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow:hidden;
+	opacity: 1;
+}
+
+
+#overlay6 {
+	position: relative;
+	opacity: 0;
+	text-align:center;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	top: 40%;
+    -webkit-transform: translateY(-40%,0);
+    -ms-transform: translateY(-40%,0);
+    transform: translateY(-40%,0);
+}
+
+
+#active:hover #overlay6 {
+     opacity: 1;
+}
+
+#activecaption{  
+	font-family: 'founder';
+    color: white;
+    font-size:96px;
+}
 
 
 
 
 .navigation a:hover{
-	color: black;
+	color: white;
 	background-color: #ff6600;
 }
 
@@ -265,6 +404,22 @@ p {
 		height:300px;
 	}
 
+		#umbrella{
+		height:300px;
+	}
+
+		#icons{
+		height:300px;
+	}
+
+		#poem{
+		height:300px;
+	}
+
+		#active{
+		height:300px;
+	}
+
 @media screen and (max-width: 414px) {
 	#biolumina{
 		height:200px;
@@ -277,6 +432,22 @@ p {
 		height:200px;
 	}
 
+	#umbrella{
+		height:200px;
+	}
+
+	#icons{
+		height:200px;
+	}	
+
+		#poem{
+		height:200px;
+	}
+
+		#active{
+		height:200px;
+	}	
+
 @media screen and (max-width: 308px) {
 	#biolumina{
 		height:100px;
@@ -286,5 +457,21 @@ p {
 	}
 
 		#typeface{
+		height:100px;
+	}
+
+		#umbrella{
+		height:100px;
+	}
+
+		#icons{
+		height:100px;
+	}
+
+		#poem{
+		height:100px;
+	}
+
+		#active{
 		height:100px;
 	}
