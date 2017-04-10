@@ -277,7 +277,7 @@ p {
 		height:200px;
 	}
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 308px) {
 	#biolumina{
 		height:100px;
 	}
