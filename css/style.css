@@ -482,8 +482,8 @@ p {
 
 #contact {
 	width: 900px;
-	height: 200px;
-	top: 100px;
+	height: 100px;
+	top: 220px;
 	position: relative;
 	text-align: center;
 	letter-spacing: .2em;
@@ -504,6 +504,7 @@ p {
 
 	.textbox{
 		max-width: 500px;
+		height: 150px;
 	}
 
 	p {
@@ -553,7 +554,8 @@ p {
 	}
 
 	.textbox{
-		max-width: 200px;
+		max-width: 320px;
+		height: 210px;
 	}
 
 	p {
@@ -597,7 +599,7 @@ p {
 	}
 
 	.textbox{
-		max-width: 280px;
+		max-width: 200px;
 	}
 
 		p {
