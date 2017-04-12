@@ -146,6 +146,7 @@ a {
 	position: absolute;
 	left: 50%;
 	transform:translate(-50%,0);
+	padding-bottom: 50px;
 }
 
 img {
@@ -446,10 +447,11 @@ img {
 
 .textbox {
 	position: relative;
-	max-width: 900px;
-	height:400px;
-	left: 30%;
-	transform:translate(-30%,0);
+	max-width: 1200px;
+	padding: 100px;
+	height: auto;
+	left: 50%;
+	transform:translate(-50%,0);
 
 }
 
@@ -483,10 +485,9 @@ p {
 #contact {
 	width: 900px;
 	height: 100px;
-	top: 220px;
+	padding-top: 20px;
 	position: relative;
 	text-align: center;
-	letter-spacing: .2em;
 
 }
 
@@ -503,8 +504,8 @@ p {
 	}
 
 	.textbox{
-		max-width: 500px;
-		height: 150px;
+		max-width: 700px;
+		padding: 70px;
 	}
 
 	p {
@@ -543,19 +544,15 @@ p {
 		height:300px;
 	}
 
-	#contact {
-		top:300px;
-	}
-
-
 @media screen and (max-width: 414px) {
 	.headline{
 		font-size: 2em;
 	}
 
 	.textbox{
-		max-width: 320px;
-		height: 210px;
+		max-width: 480px;
+		padding: 50px;
+
 	}
 
 	p {
@@ -599,7 +596,7 @@ p {
 	}
 
 	.textbox{
-		max-width: 200px;
+		max-width: 250px;
 	}
 
 		p {
