@@ -47,7 +47,7 @@ header {
 	position: fixed;
 	font-size: 5em; 
     color: #ee2a24;
-     transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     font-family: 'suisse';
     transform: translate(-50%, 0);
     opacity: .40;
@@ -464,7 +464,7 @@ p {
 
 .headline {
 	font-family: 'founderitalic';
-	font-size: 4em;
+	font-size: 3em;
 	color: black;
 }
 
@@ -500,7 +500,7 @@ p {
 @media screen and (max-width: 768px) {
 
 	.headline{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.textbox{
@@ -546,7 +546,7 @@ p {
 
 @media screen and (max-width: 414px) {
 	.headline{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.textbox{
