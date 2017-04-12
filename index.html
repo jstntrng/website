@@ -4,20 +4,132 @@
   <title>Welcome!</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<div class="box2">	
-<!--Second Scrollbox-->
 
-<img src="images/monogram.png"></img></br> </br>
-	<div class="headline3">This website is currently under construction.
-	</br>Please contact Justin Truong <a href="mailto:hi@justintruong.net?Subject=Hello%20Justin">here</a> for any work inquiries or questions. Thank you for your patience.</div>
+<header class="nav-down">
+		<div class="logo">
+			<img src="images/monogram.png"></img>
+		</div>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<div class="navigation">
+			<ul>
+				<li><a href="index2.html"> projects </a></li>
+				<li><a href=""> info</a></li>
+				<li class="last"><a href=""> contact</a></li>
+			</ul>
+		</div>
 
-    <script type="text/javascript"></script>
+</header>
 
+<a href="#top" class="scrollup">^</a>
+
+
+<div class="biggestcontainer"> 
+
+    <div class="content">
+        <a href="01typeface.html"><div id="typeface">
+            <div id="overlay3">
+                <span id="typefacecaption">CSS Typeface</span>
+            </div> </div></a>
+</br>
+
+        <a href="02biolumina.html">
+            <div id="biolumina">
+            <div id="overlay"><span id="plus">Biolumina</span></div> 
+            </div>
+        </a>
+</br>      
+        <a href="03tbd.html"><div id="tbd">
+            <div id="overlay2">
+                <span id="tbdcaption">To Be Designed</span>
+            </div> </div></a>
+</br>    
+        <a href="04umbrella.html"><div id="umbrella">
+            <div id="overlay3">
+                <span id="umbrellacaption">Umbrella</span>
+            </div> </div></a>
+</br>   
+        <a href="05poem.html"><div id="poem">
+            <div id="overlay5">
+                <span id="poemcaption">The Poem Project</span>
+            </div> </div></a>
+</br>  
+        <a href="07icons.html"><div id="icons">
+            <div id="overlay4">
+                <span id="iconscaption">Inner Sunset</span>
+            </div> </div></a>
+
+</br>  
+        <a href="08typophoto.html"><div id="typophoto">
+            <div id="overlay7">
+                <span id="typophotocaption">Typophoto</span>
+            </div> </div></a>
+</br> 
+        <a href="06active.html"><div id="active">
+            <div id="overlay6">
+                <span id="activecaption">Active Fabric</span>
+            </div> </div></a>
+    
+
+    </div>
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+
+}
+
+</script>
 
 
 </body>
