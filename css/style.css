@@ -41,17 +41,17 @@ header {
 	height: 30px;
 	padding: 0;
 	width: auto;
-	top: 88%;
+	top: 87%;
 	left: 50%;
 	z-index: 100;
 	position: fixed;
-	font-size: 7em; 
+	font-size: 5em; 
     color: #ee2a24;
      transition: opacity 0.2s ease-in-out;
-    font-family: 'founder';
+    font-family: 'suisse';
     transform: translate(-50%, 0);
-    opacity: .60;
-    
+    opacity: .40;
+
 }
 
 .scrollup:hover {
@@ -64,14 +64,17 @@ header {
 	height: auto;
 	z-index: 100;
 	position: fixed;
-	font-size: 7em; 
+	font-size: 5em; 
     color: #ee2a24;
-    font-family: 'founder';
-    left: 10%;
-    transform: translate(-10%, 0);
-    opacity: .60;
+    font-family: 'suisse';
+    left: 5%;
+    transform: translate(-5%, 0);
+    opacity: .40;
 }
 
+.goback:hover {
+	opacity: 1;
+}
 
 .navigation {
 	width: 238px;
@@ -457,7 +460,6 @@ p {
 }
 
 .headline {
-	width: 1200px;
 	font-family: 'founderitalic';
 	font-size: 4em;
 	color: black;
@@ -484,6 +486,19 @@ p {
 -------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+
+	.headline{
+		font-size: 2em;
+	}
+
+	.textbox{
+		max-width: 350px;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
 	#biolumina{
 		height:300px;
 	}
@@ -512,7 +527,24 @@ p {
 		height:300px;
 	}
 
+		#typophoto{
+		height:300px;
+	}
+
+
 @media screen and (max-width: 414px) {
+	.headline{
+		font-size: 2em;
+	}
+
+	.textbox{
+		max-width: 200px;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
 	#biolumina{
 		height:200px;
 	}
@@ -540,7 +572,24 @@ p {
 		height:200px;
 	}	
 
+		#typophoto{
+		height:200px;
+	}
+
 @media screen and (max-width: 308px) {
+	.headline{
+		font-size: 2em;
+	}
+
+	.textbox{
+		max-width: 150px;
+	}
+
+		p {
+		font-size: 1em;
+	}
+
+
 	#biolumina{
 		height:100px;
 	}
@@ -565,5 +614,9 @@ p {
 	}
 
 		#active{
+		height:100px;
+	}
+
+		#typophoto{
 		height:100px;
 	}
