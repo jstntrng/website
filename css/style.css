@@ -450,6 +450,7 @@ img {
 	height:400px;
 	left: 30%;
 	transform:translate(-30%,0);
+
 }
 
 p {
@@ -596,11 +597,11 @@ p {
 	}
 
 	.textbox{
-		max-width: 150px;
+		max-width: 280px;
 	}
 
 		p {
-		font-size: 1em;
+		font-size: .1em;
 	}
 
 
