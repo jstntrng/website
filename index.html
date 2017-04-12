@@ -9,27 +9,27 @@
 
 <body>
 
-    <header class="nav-down">
+   <header class="nav-down">
       <div class="logo">
-         <img src="images/monogram.png"></img>
-     </div>
+       <img src="images/monogram.png"></img>
+   </div>
 
-     <div class="navigation">
-         <ul>
-            <li><a href="index.html"> projects </a></li>
-            <li><a href="#info"> info</a></li>
-            <li class="last"><a href="#contact"> contact</a></li>
-        </ul>
-    </div>
+   <div class="navigation">
+       <ul>
+        <li><a href="#content"> projects </a></li>
+        <li><a href="#info"> info</a></li>
+        <li class="last"><a href="#contact"> contact</a></li>
+    </ul>
+</div>
 
 </header>
 
-<a href="#top" class="scrollup">^</a>
+<a href="#content" class="scrollup">^</a>
 
 
 <div class="biggestcontainer"> 
 
-    <div class="content">
+    <div id="content">
         <a href="01typeface.html"><div id="typeface">
             <div id="overlay3">
                 <span id="typefacecaption">CSS Typeface</span>
@@ -75,23 +75,23 @@
     </br>
     <span id="info">
 
-    <div class="textbox" style="background-color: black;">
-    <img src="images/info.jpg"></img>
-    <p style="font-family: 'suisse'; color: white;"> <span style="color:#ee2a24"> <b>Justin Truong ◌</b></span> As a designer currently living and working in San Francisco, I champion diversity. My work is a blend of photography, interaction, and experience. Graphic design is something I want to continiously push through multiple methods of making in order to keep myself thoughtful, aware, and adventurous.</p>
-    </div></span>
+        <div class="textbox" style="background-color: black;">
+            <img src="images/info.jpg"></img>
+            <p style="font-family: 'suisse'; color: white;"> <span style="color:#ee2a24"> <b>Justin Truong ◌</b></span> As a designer currently living and working in San Francisco, I champion diversity. My work is a blend of photography, interaction, and experience. Graphic design is something I want to continiously push through multiple methods of making in order to keep myself thoughtful, aware, and adventurous.</p>
+        </div></span>
 
 
-<span id="contact">
+        <span id="contact">
 
-<p>
-<a href="mailto:hi@justintruong.net?Subject=Hello%20Justin" style="padding-right: 20px">◌ Email</a> 
-<a href="resume.pdf" style="padding-right: 20px">◌ Resume</a>
-<a href="https://www.instagram.com/jstntrng/">◌ Instagram</a>
-</p>
-<p style="font-size: 1em;">© Justin Truong 2017</p>
+            <p>
+                <a href="mailto:hi@justintruong.net?Subject=Hello%20Justin" style="padding-right: 20px">◌ Email</a> 
+                <a href="resume.pdf" style="padding-right: 20px">◌ Resume</a>
+                <a href="https://www.instagram.com/jstntrng/">◌ Instagram</a>
+            </p>
+            <p style="font-size: 1em;">© Justin Truong 2017</p>
 
-</span>
-</div>
+        </span>
+    </div>
 
 </div>
 
@@ -104,12 +104,11 @@
 
 
 <script>
+
 $(document).ready(function(){
 
     $(window).scrollTop(0);
 });
-
-
 
 
 var didScroll;
@@ -151,7 +150,6 @@ function hasScrolled() {
     lastScrollTop = st;
 
 }
-
 
 </script>
 
