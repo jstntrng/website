@@ -18,7 +18,7 @@
 body {
 	padding-top: 60px;
 	margin: 0 auto;
-	background: #f8f2ea;
+	background: white;
   	overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ html, body {
 }
 
 header {
-    background: #f8f2ea;
+    background: white;
     height: 130px;
     position: fixed;
     top: 0;
@@ -184,7 +184,7 @@ img {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 2.5px solid #f8f2ea;
+    border: 2.5px solid white;
     margin: 0px;
 	float: left;
 	width:416px;
@@ -224,7 +224,7 @@ img {
 	height: 30px;
 	overflow:hidden;
 	opacity: 1;
-	background-color:#f8f2ea;
+	background-color:white;
 	margin-top:5px;
 	color: #006f76;
 }
@@ -427,7 +427,7 @@ img {
 	line-height: 1.25em;
 	height: auto;
 	background-color: #3d3d3d;
-	color: #f8f2ea
+	color: white
 
 
 }
