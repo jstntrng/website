@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Biolumina</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel=icon href=images/favicon.png>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="padding-top: 10px;">
+
+
+<a href="#content" class="scrollup">^</a>
+<a href="index.html#biolumina" class="goback"><</a>
+
+
+<div class="biggestcontainer"> 
+
+    <div id="content">
+        <img src="images/biolumina1.jpg"> </img>
+        <div class="textbox">
+
+            <div class="headline">Biolumina</div>
+                       <p> This project uses sound as a means to visual representation. The end result is a 12’x12’ inch dynamic composition that hints at a narrative informed by sound.
+           </p>
+
+        </div>
+
+        <img src="images/biolumina2.jpg"></img>
+            <div class="textbox">
+            <p> By building a vocabulary around Little Glass Men’s song “Biolumina” consisting of descriptors such as sinister, eroded, and aquatic, I was able to build visuals through tool breaking, collage, and photography. 
+           </p>
+             <img src="images/grid.jpg"></img>
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="script.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+
+}
+
+</script>
+
+
+</body>
+</html>

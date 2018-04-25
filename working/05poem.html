@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>The Poem Project</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel=icon href=images/favicon.png>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:black; padding-top: 10px;">
+
+
+<a href="#content" class="scrollup">^</a>
+<a href="index.html#poem" class="goback"><</a>
+
+
+<div class="biggestcontainer"> 
+
+    <div id="content">
+         <div class="responsive-container">
+            <iframe src="https://player.vimeo.com/video/212858401?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
+        </br>
+        </br>
+        <div class="textbox">
+            <div class="headline" style="color: white">The Poem Project</div>
+                       <p style="color: white">How do you build experience? In this project I designed an interactive experience using words from a poem.</p>
+
+        </div>
+         <img src="images/poem1.gif"></img>
+         <div class="textbox">
+             <p style="color: white"> By using appropriate imagery, typography, and pacing, a designed experience can stop someone in their tracks and engage them into a narrative.</p> </div>
+
+        <img src="images/poem2.jpg"></img>
+        <div class="textbox">
+              <p style="color: white">The words in the poem already had it’s own way of implicating the viewer, the project simply acts as an aid to the poetry.</p> </div>
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="script.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+
+}
+
+</script>
+
+
+</body>
+</html>

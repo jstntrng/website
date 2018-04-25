@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>To Be Determined</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel=icon href=images/favicon.png>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="padding-top: 10px;">
+
+
+<a href="#content" class="scrollup">^</a>
+<a href="index.html#tbd" class="goback"><</a>
+
+
+<div class="biggestcontainer"> 
+
+    <div id="content">
+        <img src="images/tbd.jpg"> </img>
+        <div class="textbox">
+            <div class="headline">To Be Designed</div>
+                       <p>A group of graphic design students at CCA ran an exhibition in 2016 around unfinished work, or work that was still in process. I took this opportunity to rummage through my shoebox of photographs to create something out of them. Where do photos go once they have been taken? If you still shoot photography the analog way, they may be lying around in your shoe box collecting dust. For most of us, digital photography allows us to store our photos instantly and we have begun to generate more and more pictures which leads us to dumping them into the abyss of virtual repositories.</p>
+
+        </div>
+
+             <img src="images/tbd1.jpg"></img>
+
+                <div class="textbox">
+          
+                       <p>This habit of photo dumping became the conceptual base for this project as I pushed around 40 analog prints into the scanner, outputted the digital results back into 4x6 prints, and my final result for the exhibition was a stack of giveaway photos and one big poster.</p>
+        </div>
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="script.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+
+}
+
+</script>
+
+
+</body>
+</html>

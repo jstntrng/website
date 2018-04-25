@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Typophoto</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel=icon href=images/favicon.png>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="padding-top: 10px;">
+
+
+<a href="#content" class="scrollup">^</a>
+<a href="index.html#icons" class="goback"><</a>
+
+
+<div class="biggestcontainer"> 
+
+<div id="content">
+<img src="images/typophoto1.jpg"></img>
+</br>
+</br>
+    <div class="textbox">
+        <div class="headline">Typophoto</div>
+                   <p>Compositions that seamlessly mesh type and image. I was given three words from a passage in Robert Bringhurst's "<span style="font-family:'founderitalic';">The Elements of Typographic Style.</span>" 
+    </div>
+            <img src="images/typophoto.jpg"></img>
+
+         <div class="textbox">
+              <p></br>The passage reads:
+
+               </br><span style="font-family:'founderitalic';">“...by all means leave the road when you wish. That <span style="color:#ee2a24">is</span> precisely the use of a road: to reach individually chosen points of departure. By all means break the rules, and break them beautifully, deliberately, and well. This is one of the ends <span style="color:#ee2a24">for</span> which they <span style="color:#ee2a24">exist</span>.”</i> </span></p>
+            <img src="images/typophoto2.jpg"></img>
+             <img src="images/typophoto3.jpg"></img>
+             <img src="images/typophoto4.jpg"></img>
+            
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="script.js"></script>
+
+
+<script>
+$(document).ready(function(){
+$(window).scrollTop(0);
+});
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+didScroll = true;
+});
+
+setInterval(function() {
+if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+}
+}, 250);
+
+function hasScrolled() {
+
+var st = $(this).scrollTop();
+
+// Make sure they scroll more than delta
+if(Math.abs(lastScrollTop - st) <= delta)
+    return;
+
+// If they scrolled down and are past the navbar, add class .nav-up.
+// This is necessary so you never see what is "behind" the navbar.
+if (st > lastScrollTop && st > navbarHeight){
+    // Scroll Down
+    $('header').removeClass('nav-down').addClass('nav-up');
+} else {
+    // Scroll Up
+    if(st + $(window).height() < $(document).height()) {
+        $('header').removeClass('nav-up').addClass('nav-down');
+    }
+}
+
+lastScrollTop = st;
+
+}
+
+</script>
+
+
+</body>
+</html>

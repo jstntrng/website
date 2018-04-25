@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Umbrella Kitchen</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel=icon href=images/favicon.png>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="padding-top: 10px;">
+
+
+<a href="#content" class="scrollup">^</a>
+<a href="index.html#umbrella" class="goback"><</a>
+
+
+<div class="biggestcontainer"> 
+
+    <div id="content">
+        <img src="images/umbrella2.jpg"></img>
+        <div class="textbox">
+            <div class="headline">Umbrella Kitchen</div>
+                       <p>Homelessness in San Francisco is forever prominent. This restaurant identity is designed around giving those without a home, a place for shelter. The Umbrella Kitchen is a robin-hood restaurant that transforms its business into a soup kitchen on the weekends. </p>
+
+        </div>
+                <img src="images/umbrella3.jpg"></img>
+            <div class="textbox">
+                       <p>The logo is a hermit crab character that finds a temporary home underneath an umbrella. The patterns for the Umbrella Kitchen visually mimic the harsh San Francisco rain.</p>
+
+            </div>
+             <img src="images/umbrella1.jpg"></img>
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="script.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+
+}
+
+</script>
+
+
+</body>
+</html>
