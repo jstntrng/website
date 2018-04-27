@@ -1,6 +1,5 @@
  
-
- @font-face {
+@font-face {
   font-family: "founder";
   src:url("founder.otf");
 }
@@ -40,22 +39,6 @@ header {
 
 }
 
-.scrollup {
-	height: 30px;
-	padding: 0;
-	width: auto;
-	top: 87%;
-	left: 50%;
-	z-index: 100;
-	position: fixed;
-	font-size: 5em; 
-    color: #ee2a24;
-    transition: opacity 0.2s ease-in-out;
-    font-family: 'Fira Mono';
-    transform: translate(-50%, 0);
-    opacity: .40;
-
-}
 
 .scrollup:hover {
 	opacity: 1;
@@ -204,8 +187,10 @@ img {
 
 #catalog {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(catalog.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -221,8 +206,10 @@ img {
 
 #passport {
 	float: left;
-	width: 416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(pass.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -239,8 +226,10 @@ img {
 
 #biolumina {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(biolumina.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -255,8 +244,10 @@ img {
 
 #tbd {
     float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(snapchat.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -271,8 +262,10 @@ img {
 
 #arleo {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(arleo.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -287,8 +280,10 @@ img {
 
 #thesis {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(thesis.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -303,8 +298,10 @@ img {
 
 #umbrella {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(umbrella.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -318,8 +315,10 @@ img {
 
 #icons {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(icons.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -333,8 +332,10 @@ img {
 
 #poem {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(poem.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -349,8 +350,10 @@ img {
 
 #active {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(active.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -361,8 +364,10 @@ img {
 
 #csstypeface {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(csstype2.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -376,8 +381,10 @@ img {
 
 #typophoto {
 	float: left;
-	width:416px;
-	height: 350px;
+	max-width:416px;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
 	background: url(typophoto.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -449,138 +456,32 @@ img {
 
 @media screen and (max-width: 768px) {
 
-	.headline{
-		font-size: 1.5em;
-	}
-
-	.textbox{
-		max-width: 700px;
-		padding: 70px;
-	}
-
-	p {
-		font-size: 1em;
-	}
-
-	#biolumina{
-		height:300px;
-	}
-
-	#tbd{
-		height:300px;
-	}
-
-		#typeface{
-		height:300px;
-	}
-
-		#umbrella{
-		height:300px;
-	}
-
-		#icons{
-		height:300px;
-	}
-
-		#poem{
-		height:300px;
-	}
-
-		#active{
-		height:300px;
-	}
-
-		#typophoto{
-		height:300px;
-	}
 
 @media screen and (max-width: 414px) {
-	.headline{
-		font-size: 1.5em;
-	}
-
-	.textbox{
-		max-width: 480px;
-		padding: 50px;
-
-	}
-
-	p {
-		font-size: 1em;
-	}
-
-	#biolumina{
-		height:200px;
-	}
-	#tbd{
-		height:200px;
-	}
-
-	#typeface{
-		height:200px;
-	}
-
-	#umbrella{
-		height:200px;
-	}
-
-	#icons{
-		height:200px;
-	}	
-
-		#poem{
-		height:200px;
-	}
-
-		#active{
-		height:200px;
-	}	
-
-		#typophoto{
-		height:200px;
-	}
-
-@media screen and (max-width: 308px) {
-	.headline{
-		font-size: 2em;
-	}
-
-	.textbox{
-		max-width: 250px;
-	}
-
-		p {
-		font-size: .1em;
-	}
 
 
-	#biolumina{
-		height:100px;
-	}
-		#tbd{
-		height:100px;
-	}
+@media screen and (max-width: 768px) {
+.projectmod {
+	width:375px;
+	height: 416px;
+	border: 0px;
+	padding-bottom: 10px;
+}
 
-		#typeface{
-		height:100px;
-	}
+.catalog {
+	max-height: 350px;
+}
 
-		#umbrella{
-		height:100px;
-	}
+.overlay {
+	width: 375px;
+	font-size: 12pt
+}
 
-		#icons{
-		height:100px;
-	}
+.tags {
+	width: 375px;
+	font-size: 5pt
+}
 
-		#poem{
-		height:100px;
-	}
-
-		#active{
-		height:100px;
-	}
-
-		#typophoto{
-		height:100px;
-	}
+.header {
+	max-width: 375px;
+}
