@@ -459,11 +459,12 @@ img {
 
 
 @media screen and (max-width: 768px) {
+
 .projectmod {
 	width:375px;
 	height: 416px;
 	border: 0px;
-	padding-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .catalog {
@@ -517,13 +518,15 @@ img {
 	font-size: 12pt
 }
 .textbox{
-	padding: 0px;
-	font-size: 24px;
+	padding-top: 40px;
+	padding-bottom:40px;
+	font-size: 32px;
 }
 
 .tags {
+	margin-top: 0px;
 	width: 375px;
-	font-size: 5pt
+	font-size: 8pt
 }
 
 .header {
