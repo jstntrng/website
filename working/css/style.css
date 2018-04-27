@@ -412,8 +412,6 @@ img {
 	height: auto;
 	background-color: #3d3d3d;
 	color: white
-
-
 }
 
 
@@ -472,9 +470,56 @@ img {
 	max-height: 350px;
 }
 
+.catalog {
+	max-height: 350px;
+}
+.arleo {
+	max-height: 350px;
+}
+.passport {
+	max-height: 350px;
+}
+.poem {
+	max-height: 350px;
+}
+.biolumina {
+	max-height: 350px;
+}
+.csstypeface {
+	max-height: 350px;
+}
+.typophoto {
+	max-height: 350px;
+}
+
+.umbrella {
+	max-height: 350px;
+}
+
+.tbd {
+	max-height: 350px;
+}
+
+.icons {
+	max-height: 350px;
+}
+
+.thesis {
+	max-height: 350px;
+}
+
+.active {
+	max-height: 350px;
+}
+
 .overlay {
 	width: 375px;
 	font-size: 12pt
+}
+.textbox{
+	width: 375px;
+	padding: 0px;
+	font-size: 24px;
 }
 
 .tags {
