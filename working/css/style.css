@@ -168,8 +168,7 @@ img {
 }
 
 .projectmod:hover {
-	opacity: .2;
-	-webkit-transition: opacity .5s;
+
 }
 
 .overlay {
@@ -177,7 +176,7 @@ img {
 	word-spacing: 1px;
 	text-align: center;
 	font-size: 16pt;
-	padding-top: 8px;
+	padding-top: 10px;
 	float: left;
 	font-weight: 1000;
 	width: 416px;
@@ -216,6 +215,8 @@ img {
 }
 
 #catalog:hover {
+	opacity: .1;
+	-webkit-transition: opacity .2s;
 }
 
 #passport {
@@ -231,6 +232,8 @@ img {
 }
 
 #passport:hover {
+	opacity: .2;
+	-webkit-transition: opacity .5s;
 }
 
 
@@ -286,7 +289,7 @@ img {
 	float: left;
 	width:416px;
 	height: 350px;
-	background: url(thesis.gif);
+	background: url(thesis.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -302,7 +305,7 @@ img {
 	float: left;
 	width:416px;
 	height: 350px;
-	background: url(umbrella.gif);
+	background: url(umbrella.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
