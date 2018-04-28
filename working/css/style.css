@@ -15,7 +15,7 @@
 }
 
 body {
-	padding-top: 60px;
+	padding-top: 10px;
 	margin: 0 auto;
 	background: white;
   	overflow-x: hidden;
@@ -27,16 +27,15 @@ html, body {
 }
 
 header {
+	position: fixed;
+	border-bottom: 1px dotted black;
     background: white;
-    height: 130px;
-    position: fixed;
+    height: 105px;
     top: 0;
     transition: top 0.2s ease-in-out;
+    max-width: 1258px;
     width: 100%;
     z-index:10;
-    left: 50%;
-    transform: translate(-50%, 0);
-
 }
 
 
@@ -44,42 +43,24 @@ header {
 	opacity: 1;
 }
 
-.goback {
-	width: 20px;
-	padding: 0;
-	height: auto;
-	z-index: 100;
-	position: fixed;
-	font-size: 4em; 
-    color: #ee2a24;
-    font-family: 'suisse';
-    left: 5%;
-    transition: opacity 0.2s ease-in-out;
-    transform: translate(-5%, 0);
-    opacity: .40;
-}
-
-.goback:hover {
-	opacity: 1;
-}
-
 .navigation {
-	width: 238px;
-	height:100px;
-	top: 95px;
-	left: 50%;
-	position: absolute;
-	transform:translate(-50%,0);
+	top: 30px;
+	width: 300px;
+	height: 20px;
+	float: right;
+	position: relative;
 }
 
 .last {
-	margin-right: -45px;
+	margin-right: -15px;
 }
 
 ul {
+	width: 200px;
 	font-family: 'fira mono';
-	font-size: .7em;
+	font-size: 14pt;
 	color: white;
+	font-weight: 1000px;
 	text-decoration: none;
 	width: auto;
 	text-align: right;
@@ -89,7 +70,7 @@ ul {
 
 li {
 	float: left;
-	margin-right: 48px;
+	margin-right: 35px;
 }
 
 a {
@@ -98,17 +79,16 @@ a {
 }
 
 .nav-up {
-    top: -130px;
+    top: -110px;
 }
 
 .logo {
 	top: 20px;
-	width: 40px;
-	height: 60px;
+	left: 15px;
+	width: 45px;
+	height: 65px;
 	float: left;
-	left: 50%;
-	transform:translate(-50%,0);
-	position: absolute;
+	position: relative;
 }
 
 /*start of containers
@@ -133,7 +113,7 @@ img {
 #content{
 	width:100%;
 	position:relative;
-	padding-top: 70px;
+	padding-top: 130px;
 	padding-bottom: 50px;
 }
 
@@ -449,6 +429,25 @@ img {
 #contact a:hover {
 	color: #ee2a24;
 }
+
+.footer {
+	font-family: 'Rozha One', serif;
+	word-spacing: 1px;
+	font-size: 12pt;
+	word-spacing: 1px;
+	float: left;
+	max-width: 100%;
+	padding: 5px;
+	height:100px;
+	line-height: 1.25em;
+	height: auto;
+	background-color: orange;
+	color: white;
+}
+
+
+
+
 /* Mobile
 -------------------------------------------------- */
 
@@ -474,21 +473,27 @@ img {
 .catalog {
 	max-height: 350px;
 }
+
 .arleo {
 	max-height: 350px;
 }
+
 .passport {
 	max-height: 350px;
 }
+
 .poem {
 	max-height: 350px;
 }
+
 .biolumina {
 	max-height: 350px;
 }
+
 .csstypeface {
 	max-height: 350px;
 }
+
 .typophoto {
 	max-height: 350px;
 }
