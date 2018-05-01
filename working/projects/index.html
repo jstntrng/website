@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome!</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Varela+Round|Rozha+One" rel="stylesheet">
+
+  <link rel=icon href=images/favicon.png>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<span id="top">
+
+<header class="nav-down">
+ <div class="allnav">
+          <div class="logo">
+           <img src="images/monogram.png"></img>
+       </div>
+
+    <div class="navigation">
+           <ul>
+            <li><a href="#content"> projects </a></li>
+            <li><a href="#info"> info</a></li>
+            <li class="last"><a href="#contact"> contact</a></li>
+    </ul>
+
+       </div>
+</div>
+</header>
+
+<div class="slideshow">
+    <div class="slideshowmod">
+    <div id="imageplace">
+
+<div id="c1" class='image'><img src="images/chronicle/1.jpg"/></div>
+<div id="c2" class='image'> <img src="images/chronicle/2.jpg"/></div>
+<div id="c3" class='image'> <img src="images/chronicle/3.jpg"/></div>
+<div id="c4" class='image'> <img src="images/chronicle/4.jpg"/></div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="biggestcontainer"> 
+
+<div id="content">
+
+<div class="ghostdiv"></div>
+
+<div class="description">
+ <div class="hidden">uyg</div>
+  <div class="headcopy"> Chronicle Books</div>
+  <div class="rule"> </div>
+
+
+  <div class="bodycopy">
+  As a marketing and communications designer at Chronicle Books, I worked on an array of marketing material and helped promote some exciting books from Chronicle's Spring 2017 to Fall 2018 collection.
+</br>
+
+
+<div class="carousel js-flickity">
+  <!-- images from unsplash.com -->
+  <div class="carousel-cell">
+    <img src="images/chronicle/1.jpg" />
+  </div>
+  <div class="carousel-cell">
+    <img src="images/chronicle/2.jpg" />
+  </div>
+  <div class="carousel-cell">
+    <img src="images/chronicle/3.jpg" />
+  </div>
+  <div class="carousel-cell">
+    <img src="images/chronicle/4.jpg" />
+  </div>
+
+</div>
+
+
+
+</br>
+  Working closely with the marketing team I developed print and web material through the method of closely examining and pulling from beautifully designed Chronicle books. Final formats include postcards, video end cards, advanced readers book copies, animated web graphics, and display mockups.
+</br>
+
+
+</br>
+For Chronicle's Fall 2018 catalog, I had the opportunity to design the divider page spreads. The colorful and uniquely gridded pages celebrate Chronicle's 25 years of fun and unique gift formats.
+
+</div>
+
+</br>
+
+ <div class="rule"> </div><div class="bodycopy2"> Special Thanks to Liz Rico and the Marketing and Communications Team at Chronicle books. </div>
+
+
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 250) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 250 && pos < 500) {
+    hideAll("c2");
+    $("#c1").fadeOut(1000);
+    $("#c2").fadeIn(1000);
+  }
+
+    if (pos > 500 && pos < 750) {
+    hideAll("c3");
+    $("#c2").fadeOut(1000);
+    $("#c3").fadeIn(1000);
+  }
+
+    if (pos > 750 && pos < 1000) {
+    hideAll("c3");
+    $("#c3").fadeOut(1000);
+    $("#c4").fadeIn(1000);
+  }
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>
