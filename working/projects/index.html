@@ -15,6 +15,15 @@
 
 <body>
 
+
+
+<!--  header -->
+<div class="footer">
+  <div class="footlink"> < </div>
+  <a href="#top"> <div class="footlink"> ^ </div></a>
+  <div class="footlink"> > </div>
+</div>
+
 <span id="top">
 
 <header class="nav-down">
@@ -34,29 +43,20 @@
 </div>
 </header>
 
-<div class="slideshow">
-    <div class="slideshowmod">
-    <div id="imageplace">
-
-<div id="c1" class='image'><img src="images/chronicle/1.jpg"/></div>
-<div id="c2" class='image'> <img src="images/chronicle/2.jpg"/></div>
-<div id="c3" class='image'> <img src="images/chronicle/3.jpg"/></div>
-<div id="c4" class='image'> <img src="images/chronicle/4.jpg"/></div>
+<!--  header -->
 
 
-        </div>
-    </div>
-</div>
-
-<div class="biggestcontainer"> 
+<!-- containers -->
 
 <div id="content">
 
-<div class="ghostdiv"></div>
+<!-- slideshow -->
+
+<!-- Description -->
+
 
 <div class="description">
- <div class="hidden">uyg</div>
-  <div class="headcopy"> Chronicle Books</div>
+  <div class="headcopy"> SFAC Passport</div>
   <div class="rule"> </div>
 
 
@@ -101,14 +101,31 @@ For Chronicle's Fall 2018 catalog, I had the opportunity to design the divider p
 
 </div>
 </div>
-
-
-
-
 </div>
 </div>
 
+<div class="slideshow"></div>
 
+ <div class="slideshowmod">
+
+      <div id="c1" class='image'>
+      <img src="images/chronicle/1.jpg"/>
+      </div>
+
+      <div id="c2" class='image'>
+      <img src="images/chronicle/2.jpg"/>
+      </div>
+
+      <div id="c3" class='image'>
+      <img src="images/chronicle/3.jpg"/>
+      </div>
+    
+      <div id="c4" class='image'>
+      <img src="images/chronicle/4.jpg"/>
+    </div>
+</div>
+
+ <div class="hidden"></div>
 <!-- JAVASCRIPT-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
@@ -174,26 +191,26 @@ $("#c1").fadeIn(1000);
 $(document).scroll(function() {
   var pos = $(document).scrollTop();
   
-  if (pos < 250) {
+  if (pos < 300) {
     hideAll("c1");
     $("#c1").fadeIn(1000);
 
   }
 
-  if (pos > 250 && pos < 500) {
+  if (pos > 300 && pos < 600) {
     hideAll("c2");
     $("#c1").fadeOut(1000);
     $("#c2").fadeIn(1000);
   }
 
-    if (pos > 500 && pos < 750) {
+    if (pos > 600 && pos < 900) {
     hideAll("c3");
     $("#c2").fadeOut(1000);
     $("#c3").fadeIn(1000);
   }
 
-    if (pos > 750 && pos < 1000) {
-    hideAll("c3");
+    if (pos > 900 && pos < 1200) {
+    hideAll("c4");
     $("#c3").fadeOut(1000);
     $("#c4").fadeIn(1000);
   }

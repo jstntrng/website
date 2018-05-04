@@ -15,20 +15,16 @@ header {
 	position: fixed;
 	border-bottom: 1px dotted black;
     background: white;
-    height: 55px;
+    height: 60px;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
-    z-index: 10000;
-	left: 50%;
-	transform:translate(-50%,0);
+    z-index: 999;
 }
 
 .allnav {
 	position: absolute;
     height: 50px;
-    top: 0;
-    max-width: 1248px;
     width: 100%;
 	left: 50%;
 	transform:translate(-50%,0);
@@ -44,14 +40,16 @@ header {
 }
 
 .navigation {
+	top: 5px;
 	width: 300px;
 	height: 10px;
 	float: right;
 	position: relative;
+	right: 5%;
 }
 
 .last {
-	margin-right: -15px;
+	margin-right: -35px;
 }
 
 ul {
@@ -64,7 +62,6 @@ ul {
 	width: auto;
 	text-align: right;
 	list-style: none;
-	padding:0;
 }
 
 li {
@@ -78,8 +75,8 @@ a {
 }
 
 .logo {
-	top: 5px;
-	left: 10px;
+	top: 8px;
+	left: 4%;
 	width: 25px;
 	height: 45px;
 	float: left;
@@ -88,116 +85,21 @@ a {
 
 /* ---------------start of containers-------------------- */
 
-.biggestcontainer {
-	max-width: 1248px;
-	width: 100%;
-	position: absolute;
-	z-index: 0;
-	left: 50%;
-	height:100%;
-	transform:translate(-50%,0);
-}
-
 img {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
 }
 
-#content{
-	width:100%;
-	position:relative;
-	padding-top: 95px;
-	padding-bottom: 50px;
-}
 
-.ghostdiv {
-	display: block;
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background: white;
-	float: left;
-	width: 624px;
-	height: 800px;
-	overflow:hidden;
-	opacity: 1;
-}
+/* ---------------Project Info---------------------------- */
 
-
-/* ---------------Project Info-------------------- */
-
-.description {
-	margin-top:0;
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background: white;
-	float: left;
-	max-width: 624px;
-	width: 100%;
+.back {
 	height: 100%;
-	overflow:auto;
-	z-index: 995;
+	width:4;
+	position: absolute;
+	background-color: black;
 }
-
-.rule {
-	border-bottom: 1px dotted black;
-	max-width: 524px;
-	width: 100%;
-	height: 10px;
-	margin-left: 50px;
-}
-
-.headcopy{
-	padding-top: 0px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 0px;
-	max-width: 474px;
-	height: 55px;
-	width:100%;
-	font-family: 'Rozha One', serif;
-	font-size: 36pt;
-}
-
-.bodycopy{
-	padding-top: 20px;
-	max-width: 524px;
-	width:100%;
-	font-family: 'Fira Mono', monospace;
-	font-size: 24pt;
-	padding-left: 50px;
-	padding-right: 50px;
-	line-height: 1.3em;
-
-}
-
-
-.bodycopy2{
-	padding-top: 18px;
-	max-width: 524px;
-	width:100%;
-	font-family: 'Fira Mono', monospace;
-	font-size: 18pt;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 50px;
-
-}
-
-.hidden {
-	display: none;
-	width: 100%;
-	height: 375px;
-	background: url('thesis.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-
-/* ---------------Left FIXED DIV-------------------- */
 
 .slideshow {
 	display: block;
@@ -205,54 +107,153 @@ img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     position: fixed;
-	max-width: 624px;
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	overflow:hidden;
-	opacity: 1;
-	z-index: 5;
+	z-index: -99;
+
+background: rgb(122,122,122);
+background: radial-gradient(circle, rgba(122,122,122,1) 0%, rgba(52,52,52,1) 100%);
+-webkit-box-shadow: inset -4px -6px 56px -4px rgba(0,0,0,0.38);
+-moz-box-shadow: inset -4px -6px 56px -4px rgba(0,0,0,0.38);
+box-shadow: inset -4px -6px 56px -4px rgba(0,0,0,0.38);
+
 }
 
 .slideshowmod{
-	position: absolute;
-	max-width: 624px;
-	width: 100%;
+	position: fixed;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    max-width: 50%;
+    width: 40%;
+    left: 4%;
 	height: 100%;
-	background-color: #ffe8b1;
-	overflow:hidden;
-}
+	overflow: hidden;
+	display: block;
 
-
-#imageplace {
-	position: absolute;
-	width: 524px;
-	padding-left: 50px;
-	padding-right: 50px;
-	max-height: 500px;
-	height: 100%;
-	top: 50%;
-	transform: translate(0%, -50%);
 }
 
 .image {
 	position: absolute;
-	width: 524px;
-	height: 500px;
 	z-index: 1000;
-	display:none;
+	display: none;
+	top: 50%;
+	transform: translate(0,-50%);
 } 
 
+.description {
+	position: absolute;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: white;
+	max-width: 50%;
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	z-index: 995;
+	top: 375px;
+	padding-left: 5%;
+	padding-right: 5%;
+	left: 50%;
+	padding-bottom: 10%;
+	-webkit-box-shadow: 0px -7px 39px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -7px 39px -1px rgba(0,0,0,0.75);
+box-shadow: 0px -7px 39px -1px rgba(0,0,0,0.75);
+}
+
+.rule {
+	border-bottom: 1px dotted black;
+	width: 100%;
+	height: 10px;
+}
+
+.headcopy{
+	padding-top: 25px;
+	padding-bottom: 0px;
+	max-height: 55px;
+	height: 100%;
+	width:100%;
+	font-family: 'Rozha One', serif;
+	font-size: 36pt;
+}
+
+.bodycopy{
+	padding-top: 20px;
+	width:100%;
+	font-family: 'Fira Mono', monospace;
+	font-size: 24pt;
+	line-height: 1.3em;
+
+}
+
+.bodycopy2{
+	padding-top: 18px;
+	width:100%;
+	font-family: 'Fira Mono', monospace;
+	font-size: 18pt;
+
+}
+
+.hidden {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	position:fixed;
+	left: 50%;
+	display: block;
+	max-width: 50%;
+	width: 100%;
+	max-height: 400px;
+	height: 100%;
+	background: url('thesis.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/* ---------------bottom nav---------------------------- */
+
+.footer {
+	max-width: 50%;
+	width:100%;
+	height: 6%;
+    position: fixed;
+    left: 50%;
+    bottom: 0%;
+    border-top: 1px dotted black;
+    z-index: 10000;
+}
+
+.footlink {
+	padding-top: 2%;
+	text-align: center;
+	float: left;
+	max-width: 33%;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border-right: 1px dotted black;
+
+}
+
+.footlink:hover {
+	background: #333;
+
+}
 
 /* ---------------GALLERIES-------------------- */
 
-
 .carousel {
   display: none;
+  padding-top: 0;
   margin-bottom: 25px;
 }
 
 .carousel-cell {
-  width: 80%;
+  width: 90%;
   height: 375px;
   /* flex-box, center image in cell */
   display: -webkit-box;
@@ -270,9 +271,9 @@ img {
   max-width: 100%;
   max-height: 100%;
   /* dim unselected */
-  opacity: 0.7;
-  -webkit-transform: scale(0.90);
-          transform: scale(0.90);
+  opacity: 0.8;
+  -webkit-transform: scale(0.80);
+          transform: scale(0.80);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
           transition: opacity 0.3s, transform 0.3s, filter 0.3s;
 }
@@ -304,27 +305,31 @@ img {
   height: 25px;
   background: white;
   opacity: 0.6;
+
 }
+
 .flickity-prev-next-button:hover {
   background: white;
   opacity: 1;
 }
+
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: black;
 }
+
 .flickity-prev-next-button.no-svg {
   color: black;
 }
+
 /* closer to edge */
 .flickity-prev-next-button.previous { left: 0; }
 .flickity-prev-next-button.next { right: 0; }
+
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
 }
-
-
 
 .responsive-container {
 	position: relative;
@@ -340,70 +345,141 @@ img {
 	height: 100%;
 }
 
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
+@media (min-width: 1681px) {
 
-/* Mobile
--------------------------------------------------- */
+	.bodycopy {
+		font-size: 34pt;
+	}
 
-@media screen and (max-width: 414px) {
-
-
-@media screen and (max-width: 768px) {
-
-.slideshow {
-	display: none;
+	.headcopy {
+		font-size: 45pt;
+		max-height: 150px;
+	}
 }
 
-.ghostdiv{
-	display:none;
+@media (min-width: 1280px) and (max-width: 1680px) {
+
+	.bodycopy {
+		font-size: 28pt;
+	}
+
+	.headcopy {
+		font-size: 40pt;
+		max-height: 100px;
+	}
 }
 
-.textbox{
-	padding-top: 40px;
-	padding-bottom:40px;
-	font-size: 32px;
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  	.bodycopy {
+		font-size: 24pt;
+	}
+
+	.headcopy {
+		font-size: 35pt;
+		max-height: 100px;
+	}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 426px) and (max-width:1023px) {
+	.slideshow {
+		display: none;
+	}
+
+	.slideshowmod {
+		display: none;
+	}
+
+	.description {
+		left: 50%;
+		transform: translate(-50%,0);
+		max-width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+	}
+
+	.hidden {
+		left: 0%;
+		max-width: 100%;
+	}
+
+	.bodycopy {
+		padding-left: 5%;
+		padding-right: 5%;
+		max-width: 90%
+	}
+
+	.headcopy {
+		padding-left: 5%;
+		padding-right: 5%;
+		max-width: 90%
+	}
+
+	.carousel {
+		padding-top: 50px;
+		padding-bottom: 25px;
+		display:block;
+	}
+
 }
 
 
-.description {
-	max-width: 375px;
-}
+@media (min-width: 0px) and (max-width:425px) {
+	.slideshow {
+		display: none;
+	}
 
+	.slideshowmod {
+		display: none;
+	}
 
-.rule {
-	max-width: 375px;
-	margin-left:0px;
-}
+	.description {
+		left: 50%;
+		transform: translate(-50%,0);
+		max-width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+	}
 
-.carousel {
- display: block;
-}
+	.hidden {
+		left: 0%;
+		max-width: 100%;
+	}
 
-.headcopy {
-	padding-top: 10px;
-	font-size: 24pt;
-	max-width: 355px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
+	.bodycopy {
+		font-size: 14pt;
+		padding-left: 5%;
+		padding-right: 5%;
+		max-width: 90%
+	}
 
-.bodycopy {
-	font-size: 14pt;
-	max-width: 355px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
+	.headcopy {
+		font-size: 34pt;
+		padding-left: 5%;
+		padding-right: 5%;
+		max-width: 90%
+	}
 
-.bodycopy2 {
-	max-width: 355px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
+	.carousel {
+		padding-top: 10px;
+		padding-bottom: 25px;
+		display:block;
+	}
 
-.hidden {
-	display: block;
-}
-
-.header {
-	max-width: 375px;
 }
