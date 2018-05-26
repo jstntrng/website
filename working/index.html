@@ -215,14 +215,6 @@ Previously apart of the Chronicle Books Marketing and Communications team.
 
 <script>
 
-document.querySelector('.button').onmousemove = (e) => {
-  const x = e.pageX - e.target.offsetLeft
-  const y = e.pageY - e.target.offsetTop
-  e.target.style.setProperty('--x', `${ x }px`)
-  e.target.style.setProperty('--y', `${ y }px`)
- 
-}
-
 $(document).ready(function(){
 
     $(window).scrollTop(0);
@@ -268,24 +260,6 @@ function hasScrolled() {
     lastScrollTop = st;
 
 }
-
-$(function() {  
-  $('.newgrid2')
-    .on('mouseenter', function(e) {
-      var parentOffset = $(this).offset(),
-          relX = e.pageX - parentOffset.left,
-          relY = e.pageY - parentOffset.top;
-      $(this).find('.overlay2').css({top:relY, left:relX})
-    })
-    .on('mouseout', function(e) {
-      var parentOffset = $(this).offset(),
-          relX = e.pageX - parentOffset.left,
-          relY = e.pageY - parentOffset.top;
-      $(this).find('.overlay2').css({top:relY, left:relX})
-    });
-  $('[href=#]').click(function(){return false});
-});
-
 
 
 </script>

@@ -223,7 +223,7 @@ img {
 
 .thumbnail-title {
 	opacity: 0;
-	font-family: 'national';
+	font-family: 'pressura';
 	z-index: 3;
 	max-width: 100%;
 	width: 74%;
@@ -232,7 +232,7 @@ img {
 	padding-right: 13%;
 	top: 45%;
 	color: white;
-	font-size: 18pt;
+	font-size: 19pt;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	line-height: 1em;
