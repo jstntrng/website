@@ -65,7 +65,7 @@ header {
 	top: 45px;
 	width: 120px;
 	height: 10px;
-	right: 4%;
+	right: 2%;
 	position: relative;
 	float: right;
 	font-size: 14pt;
@@ -115,7 +115,7 @@ a:hover {
 
 .logo {
 	top: 23px;
-	left: 5%;
+	left: 4%;
 	width: 45px;
 	height: 45px;
 	float: left;
@@ -197,10 +197,11 @@ img {
 	float: left;
 	margin: 0 auto;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .overlay2 {
-		display: block;
+	display: block;
 	position: absolute;
 	background-color: #FF3B3F;
 	width: 100%;
@@ -211,42 +212,105 @@ img {
 	z-index: 2;
 }
 
+.newgrid2 img {
+	opacity: 1;
+    -webkit-transform:scale(1.015); /* Safari and Chrome */
+    -moz-transform:scale(1.015); /* Firefox */
+    -ms-transform:scale(1.015); /* IE 9 */
+    -o-transform:scale(1.015); /* Opera */
+    transform:scale(1.025);
+}	
+
 .thumbnail-title {
 	opacity: 0;
 	font-family: 'national';
 	z-index: 3;
-	width: 80%;
+	max-width: 100%;
+	width: 74%;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	padding-left: 13%;
+	padding-right: 13%;
+	top: 40%;
 	color: white;
-	font-size: 32pt;
+	font-size: 18pt;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	line-height: 1em;
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+	text-transform: uppercase;
 }
 
-.thumbnail-title > span {
-	font-size: 12pt;
-	font-family: 'pressura';
+.rule {
+	position: relative;
+	float: left;
+    width: 100%;
+    top: 8px;
+    height: 2px;
+    background-color: white;
 }
+
+.thumb-caption {
+	opacity: 0;
+	font-family: 'national';
+	z-index: 3;
+	max-width: 100%;
+	width: 74%;
+	position: absolute;
+	padding-left: 13%;
+	padding-right: 13%;
+	top: 47%;
+	color: white;
+	font-size: 24pt;
+	line-height: 1em;
+	-webkit-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+
 
 .newgrid2:hover > .overlay2 {
 	opacity: .9;
-	transition: opacity .50s ease-in-out;
-   -moz-transition: opacity .50s ease-in-out;
-   -webkit-transition: opacity .50s ease-in-out;
+	transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+
 }
+
 
 .newgrid2:hover > .thumbnail-title {
 	opacity: 1;
     transition: opacity .50s ease-in-out;
    -moz-transition: opacity .50s ease-in-out;
    -webkit-transition: opacity .50s ease-in-out;
+	-webkit-transition: -webkit-transform .5s;
+	transition: transform .5s;
+   	-webkit-transform: translate3d(0,-40px,0);
+	transform: translate3d(0,-40px,0);
+
+}
+
+.newgrid2:hover > .thumb-caption{
+	opacity: 1;
+    transition: opacity 3s ease-in-out;
+   -moz-transition: opacity 3s ease-in-out;
+   -webkit-transition: opacity 3s ease-in-out;
+	-webkit-transition: -webkit-transform 1s;
+	transition: transform 1s;
+   	-webkit-transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30px,0);
+
 }
 
 .newgrid2:hover img {
 	filter: grayscale(100%);
-	-moz-filter: grayscale .50s ease-in-out;
-   -webkit-filter: grayscale .50s ease-in-out;
+	transition: transform .50s ease-in-out;
+   -moz-transition: transform .50s ease-in-out;
+   -webkit-transition: transform .50s ease-in-out;
+    -webkit-transform:scale(1.00); /* Safari and Chrome */
+    -moz-transform:scale(1.00); /* Firefox */
+    -ms-transform:scale(1.00); /* IE 9 */
+    -o-transform:scale(1.00); /* Opera */
+     transform:scale(1.00);
 }
 
 .odd {
@@ -311,14 +375,14 @@ img {
 	float: left;
 	max-width: 33.333333%;
 	width: 100%;
-	height: 115px;
+	height: 100px;
 	background-color: #FF3B3F;
 	font-family: 'pressura';
 	word-spacing: 1px;
 	font-size: 12pt;
 	color: black;
 	font-weight: 800;
-	padding-top: 25px;
+	padding-top: 20px;
 }
 
 .ghost {

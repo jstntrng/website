@@ -183,37 +183,26 @@ img {
 
 .slideshow {
 	display: block;
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     position: fixed;
-	width: 50%;
+    width: 50%;
 	height: 100%;
-	z-index: -99;
-	background-color: white;
-}
-
-.slideshowmod{
-	position: fixed;
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    max-width: 50%;
-    width: 40%;
-    left: 4%;
-	height: 100%;
-	overflow: hidden;
-	display: block;
-
 }
 
 .image {
 	position: absolute;
-	z-index: 1000;
 	display: none;
-	top: 50%;
-	transform: translate(0,-50%);
+	max-width: 100%;
+	width: 80%;
+	padding-right: 10%;
+	padding-left: 10%;
+	top: 46%;
+	transform: translate(0,-46%);
 } 
+
+.caption {
+	font-family: 'pressura';
+	font-size: 14pt;
+}
 
 .right{
 	position: absolute;
@@ -224,7 +213,6 @@ img {
 	width: 100%;
 	height: auto;
 	overflow: auto;
-	z-index: 995;
 	left: 50%;
 	background-color: white;
 }
@@ -252,7 +240,7 @@ img {
 	width:100%;
 	font-family: 'sectra', serif;
 	font-size: 36pt;
-	padding-top: 20px;
+	padding-top: 50px;
 	color: #181818;
 }
 
@@ -283,22 +271,6 @@ img {
 }
 
 
-.hidden {
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	position:fixed;
-	left: 50%;
-	display: block;
-	max-width: 50%;
-	width: 100%;
-	max-height: 400px;
-	height: 100%;
-	background: url('thesis.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
 
 /* ---------------bottom nav---------------------------- */
@@ -321,7 +293,7 @@ img {
 /* ---------------GALLERIES-------------------- */
 
 .carousel {
-  display: none;
+  display: block;
   max-width: 100%;
   width: 100%;
   max-height: 375px;
