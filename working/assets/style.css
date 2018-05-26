@@ -230,7 +230,7 @@ img {
 	position: absolute;
 	padding-left: 13%;
 	padding-right: 13%;
-	top: 40%;
+	top: 45%;
 	color: white;
 	font-size: 18pt;
 	-webkit-backface-visibility: hidden;
@@ -239,6 +239,7 @@ img {
 	-webkit-transform: translate3d(0,40px,0);
 	transform: translate3d(0,40px,0);
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .rule {
@@ -259,12 +260,13 @@ img {
 	position: absolute;
 	padding-left: 13%;
 	padding-right: 13%;
-	top: 47%;
+	top: 52%;
 	color: white;
-	font-size: 24pt;
-	line-height: 1em;
+	font-size: 20pt;
+	line-height: 1.25em;
 	-webkit-transform: translate3d(0,30px,0);
 	transform: translate3d(0,30px,0);
+	text-align: center;
 }
 
 
