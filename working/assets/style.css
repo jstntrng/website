@@ -241,8 +241,8 @@ img {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	line-height: 1em;
-	-webkit-transform: translate3d(0,0px,0);
-	transform: translate3d(0,0px,0);
+	-webkit-transform: translate3d(0,-15px,0);
+	transform: translate3d(0,-15px,0);
 	text-transform: uppercase;
 	text-align: center;
 	white-space: nowrap;
@@ -275,8 +275,8 @@ img {
 	color: white;
 	font-size: 18pt;
 	line-height: 1.25em;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,15px,0);
+	transform: translate3d(0,15px,0);
 	text-align: center;
 	white-space: nowrap;
 	transition: transform .5s;
@@ -290,7 +290,7 @@ img {
    -webkit-transition: opacity 3s ease-in-out;
 	-webkit-transition: -webkit-transform 1s;
 	transition: transform 1s;
-   	-webkit-transform: translate3d(0,0px,0);
+   	-webkit-transform: translate3d(0,px,0);
 	transform: translate3d(0,0px,0);
 
 }
