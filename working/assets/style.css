@@ -14,10 +14,10 @@ body {
   	overflow-x: hidden;
 }
 
-
 html, body {
     height: 100%;
 }
+
 header {
 	position: fixed;
     background: #181818;
@@ -54,7 +54,7 @@ header {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%,0);
-		animation: fadein 3s;
+	animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
@@ -120,14 +120,22 @@ a:hover {
 	left: 4%;
 	width: 45px;
 	height: 45px;
+	opacity: 1;
 	float: left;
 	position: relative;
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+    z-index: 3;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
 }
 
+.logo:hover{
+	opacity: .6;
+}
 
 @keyframes fadein {
     from {
@@ -192,7 +200,7 @@ img {
 .newgrid2 {
 	display: block;
 	position: relative;
-	max-width: 33.25%;
+	max-width: 33.3333%;
 	width: 100%;
 	top: 0;
 	bottom: 0;
@@ -491,15 +499,15 @@ img {
 		font-size: 28pt;
 	}
 
-		.style1 {
+	.style1 {
 		font-size: 12pt;
 	}
 
 	.thumbnail-title {
-		font-size: 22px;
+		font-size: 19px;
 	}
 	.thumb-caption {
-		font-size: 21pt;
+		font-size: 18pt;
 	}
 
 	.rule:before {
@@ -709,6 +717,11 @@ img {
 	.thumb-caption {
 		font-size: 16pt;
 	}	
+
+	a {
+		font-size: 10pt;
+	}
+
 }
 
 

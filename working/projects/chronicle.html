@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="flickity.css" media="screen">
 
   <link rel=icon href=images/favicon.png>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
@@ -20,7 +22,7 @@
 
   <header class="nav-down">
 
-  <div class="logo"><img src="css/logo/redlogo.svg"> </div> 
+<a href="index.html"><div class="logo"><img src="css/logo/redlogo.svg"> </div> </a>
 
   <div class="navigation">
     <ul>
@@ -31,39 +33,41 @@
 
   </div>
 
-    <div class="contact"> <a href="#content">Get in touch!</a> </div>
-
+    <div class="contact"> <a href="#content"> Get in touch! </a> </div>
   </header>
 
-<!--  header -->
 
-
-<!-- containers -->
 
 <div id="content">
 
-<!-- slideshow -->
-
-<!-- Description -->
-
 <div class="right">
 
-  <img src="images/thumb/2.jpg"/>
+  <div class="hero">
+    <img src="images/hero/chronicle.jpg"/>
+  </div>
 
 <div class="description">
 
-  <div class="headcopy"> SFAC Passport</div>
-  <div class="rule" > </div>
+  <div class="headcopy"> Chronicle Books Marketing</div>
+  <div class="rule"> </div>
+  
 </br>
 </br>
+
 <div class="quote">
 
-  Final formats include postcards, video end cards, advanced readers book copies, animated web graphics, and display mockups.
+  Working closely with the marketing team I developed print and web material through the method of closely examining and pulling from beautifully designed Chronicle books. 
 
 </div>
+
 </br>
+
   <div class="bodycopy">
-  As a marketing and communications designer at Chronicle Books, I worked on an array of marketing material and helped promote some exciting books from Chronicle's Spring 2017 to Fall 2018 collection.
+
+   The print material I created ranged from postcards and posters to signage and displays for Chronicle's retail stores. I also assisted in creating graphics for promotional videos and standard web ads. I enjoyed being able to design such a wide variety of applications.
+
+</br>
+</br>
 
 <!-- <div class="carousel js-flickity">
   <div class="carousel-cell">
@@ -81,29 +85,31 @@
 
 </div> -->
 
+<img src="images/chronicle/4.jpg"/>
+
+<h2>Printed postcards I designed for titles in adult trade books.</h2>
+
+For Chronicle's Fall 2018 catalog, I designed the divider page spreads that focused on their 25 years of unique gift formats, adult trade, and children's books. The colorful and uniquely gridded pages celebrate all of the fun and diverse books new and old.
 </br>
 
+</br>
+At Chronicle, everyone keeps such a fast pace while also working through publishing and design challenges very thoroughly and collobaratively. It was great to get an insight on the publishing industry, especially since Chronicle is one of the very few publishers that continue to push thoughtful and progressive content into the book industry.
 
 </br>
-
-  Working closely with the marketing team I developed print and wevb material through the method of closely examining and pulling from beautifully designed Chronicle books. 
-
 </br>
 
-
-</br>
-<img src="images/thumb/6.jpg"/>
-</br>
-</br>
-For Chronicle's Fall 2018 catalog, I had the opportunity to design the divider page spreads. The colorful and uniquely gridded pages celebrate Chronicle's 25 years of fun and unique gift formats.
-
-</div>
-
-</br>
 <div class="rule"></div>
 
+<h1>Thanks to The Chronicle Books Marketing & Communications Team! 
+</br>
+Liz Rico, Janice Echevarria, Alina Buevich, Sandy Frank, and Jamie Chen!
+</h1>
+</div>
+<div class="rule"></div>
+</br>
 
-<div class="footer" style="text-align: left;"> PREV</div> 
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="info"> PREV</div> </a>
 <div class="footer"> <a class="footlink" href="info">  NEXT </a></div> 
 
 </div>
@@ -113,22 +119,26 @@ For Chronicle's Fall 2018 catalog, I had the opportunity to design the divider p
 
 
 <div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/chronicle/1.jpg"/>
+  <h3> Chronicle's Fall 2018 Catalog</h3> 
+  </div>
 
+  <div id="c2" class='image'>
+  <img src="images/chronicle/6.jpg"/>
+  <h3> <i> Construction Site on Christmas Night </i> retail display. </h3> 
+  </div>
 
-      <div id="c1" class='image'>
-      <img src="images/chronicle/1.jpg"/>
-      </div>
-
-      <div id="c2" class='image'>
-      <img src="images/chronicle/2.jpg"/>
-      </div>
-
-      <div id="c3" class='image'>
-      <img src="images/chronicle/3.jpg"/>
-      </div>
+  <div id="c3" class='image'>
+  <img src="images/chronicle/3.jpg"/>
+  <h3> Adult Trade and Children's sections of the Fall 2018 Catalog.</h3></div>
     
-      <div id="c4" class='image'>
-      <img src="images/chronicle/4.jpg"/>
+  <div id="c4" class='image'>
+  <img src="images/chronicle/5.jpg"/>
+  <h3> An advanced reader's copy of
+    Dave Eggers' <i>What Can A Citizen Do?</i> </h3> 
+
 </div>
 
 <!-- JAVASCRIPT-->
@@ -202,22 +212,22 @@ $(document).scroll(function() {
 
   }
 
-  if (pos > 300 && pos < 600) {
+  if (pos > 300 && pos < 800) {
     hideAll("c2");
-    $("#c1").fadeOut(1000);
-    $("#c2").fadeIn(1000);
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
   }
 
-    if (pos > 600 && pos < 900) {
+    if (pos > 800 && pos < 1200) {
     hideAll("c3");
-    $("#c2").fadeOut(1000);
-    $("#c3").fadeIn(1000);
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
   }
 
-    if (pos > 900 && pos < 1200) {
+    if (pos > 1200 && pos < 1700) {
     hideAll("c4");
-    $("#c3").fadeOut(1000);
-    $("#c4").fadeIn(1000);
+    $("#c3").fadeOut(500);
+    $("#c4").fadeIn(500);
   }
 
 });
