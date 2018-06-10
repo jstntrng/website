@@ -76,6 +76,9 @@ header {
     border-bottom: 1px solid #EF4044;
 }
 
+.ghost {
+	display: none;
+}
 
 .hero {
 	width: 100%;
@@ -117,7 +120,7 @@ header {
 	top: 45px;
 	width: 120px;
 	height: 10px;
-	right: 2%;
+	right: 4%;
 	position: relative;
 	float: right;
 	font-size: 14pt;
@@ -316,6 +319,7 @@ img {
 	font-size: 18pt;
 	line-height: 1.5em;
 	color: #181818;
+	margin-top: 15px;
 }
 
 .quote{
@@ -323,6 +327,7 @@ img {
 	width: 90%;
 	padding: 5%;
 	padding-bottom: 5%;
+	margin-top: 25px;
 	height: auto;
 	font-family: 'national';
 	font-size: 24pt;
@@ -498,7 +503,7 @@ img {
 	}
 
 	h3 {
-		font-size: 12pt;
+		font-size: 16pt;
 	}
 
 	h2{
@@ -506,7 +511,7 @@ img {
 	}
 
 	h1{	
-		font-size: 12pt;
+		font-size: 14pt;
 	}
 
 }
@@ -526,7 +531,7 @@ img {
 	}
 
 	h3 {
-		font-size: 10pt;
+		font-size: 14pt;
 	}
 
 	h2{
@@ -534,7 +539,7 @@ img {
 	}
 
 	h1{	
-		font-size: 10pt;
+		font-size: 12pt;
 	}
 
 }
@@ -550,11 +555,11 @@ img {
 	}
 
 	.bodycopy {
-		font-size: 12pt;
+		font-size: 13pt;
 	}
 
 	h3 {
-		font-size: 10pt;
+		font-size: 14pt;
 	}
 
 	h2{
@@ -603,6 +608,9 @@ img {
 		transform:translate(0);
 	}
 
+		.ghost {
+		display: block;
+	}
 }
 
 
@@ -614,16 +622,17 @@ img {
 	}
 
 	.quote {
-		font-size: 14pt;
+		margin-top: 20px;
+		font-size: 16pt;
 	}
 
 	.bodycopy {
-		padding-top: 15px;
-		font-size: 12pt;
+		margin-top: 10px;
+		font-size: 14pt;
 	}
 
 	h3 {
-		font-size: 10pt;
+		font-size: 12pt;
 	}
 
 	h2{
@@ -631,7 +640,7 @@ img {
 	}
 
 	h1{	
-		font-size: 10pt;
+		font-size: 13pt;
 	}
 
 	.slideshow {
@@ -641,6 +650,7 @@ img {
 	.right {
 		max-width: 100%;
 		left: 0;
+		top:145px;
 		transform:translate(0);
 	}
 
@@ -682,6 +692,10 @@ img {
 		padding-left: 7%;
 		padding-right: 7%;
 	}
+
+	.ghost {
+		display: block;
+	}
 }
 
 
@@ -689,24 +703,25 @@ img {
 	
 	.headcopy {
 		padding-top: 15px;
-		font-size: 18pt;
+		font-size: 20pt;
 	}
 
 	.quote {
+		margin-top: 20px;
 		font-size: 14pt;
 	}
 
 	.bodycopy {
-		padding-top: 15px;
-		font-size: 14pt;
+		margin-top: 10px;
+		font-size: 13pt;
 	}
 
 	h3 {
-		font-size: 12pt;
+		font-size: 10pt;
 	}
 
 	h2{
-		font-size: 12pt;
+		font-size: 10pt;
 	}
 
 	h1{	
@@ -761,6 +776,10 @@ img {
 		width: 86%;
 		padding-left: 7%;
 		padding-right: 7%;
+	}
+
+	.ghost {
+		display: block;
 	}
 }
 
