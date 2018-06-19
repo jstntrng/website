@@ -679,6 +679,7 @@ p {
 
 	.footertext {
 		font-size: 12pt;
+		padding-bottom: 25px;
 	}
 
 	.footlink {
@@ -859,6 +860,10 @@ p {
 
 	.nav-up {
     	top: -160px;
+	}
+
+	.footlink {
+		margin-top: 0px;
 	}
 
 }
