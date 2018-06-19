@@ -644,36 +644,6 @@ img {
 		display: block;
 	}
 
-	.logo {
-	left: 50%;
-	transform: translate(-50%,-50%);
-	top: 48px;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	}
-
-	.navigation {
-		width: 235px;
-		top: 85%;
-		left: 50%;
-		transform: translate(-50%, -80%);
-		font-size: 11pt;
-
-	}
-
-	.padnav {
-		margin-right: 36px;
-	}
-
-	header {
-		height: 160px;
-	}
-
-	.nav-up {
-    	top: -160px;
-	}
-
 
 }
 
@@ -728,35 +698,6 @@ img {
 		display: block;
 	}
 
-		.logo {
-	left: 50%;
-	transform: translate(-50%,-50%);
-	top: 48px;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	}
-
-	.navigation {
-		width: 235px;
-		top: 85%;
-		left: 50%;
-		transform: translate(-50%, -80%);
-		font-size: 11pt;
-
-	}
-
-	.padnav {
-		margin-right: 36px;
-	}
-
-	header {
-		height: 160px;
-	}
-
-	.nav-up {
-    	top: -160px;
-	}
 
 }
 
@@ -775,7 +716,7 @@ img {
 		top: 85%;
 		left: 50%;
 		transform: translate(-50%, -80%);
-		font-size: 10pt;
+		font-size: 11pt;
 
 	}
 
