@@ -830,7 +830,7 @@ p {
 
 
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
-	
+
 	.logo {
 		left: 50%;
 		transform: translate(-50%,-50%);
@@ -841,11 +841,11 @@ p {
 	}
 
 	.navigation {
-		width: 235px;
+		width: 220px;
 		top: 85%;
 		left: 50%;
 		transform: translate(-50%, -80%);
-		font-size: 11pt;
+		font-size: 10pt;
 
 	}
 
