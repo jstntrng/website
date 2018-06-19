@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justin Truong / Passport 2018</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+  <link rel=icon href=images/favicon.png>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/sfac.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy">Passport Middle Polk</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+
+ Branding for San Francisco Arts Commisions' Annual passport event.
+
+</div>
+
+<div class="bodycopy">
+
+<b> As an intern at <a href="https://www.mendedesign.com" style="color: #00cbe9">MendeDesign</a></b>, I helped the team with the branding for this fun DIY event. In the introduction statement MD discusses the design language as conceptualized by...</br>
+
+</br>
+<b><i> "That corridor of Polk bounded by Geary and California. Home, alternately, to immigrants of German stock, Victorian ladies, earthquake survivors, longshoremen, gay entrepreneurs, and those that slipped through the cracks. Now, a thriving commercial strip reflecting the latest wave of prosperity that is San Francisco."</i></b>
+
+</br>
+</br>
+
+<img src="images/passport/5.gif"/>
+<h2>A peek into the passport book and a few of the unique stamps crafted by local artists!</h2>
+
+<b> Frank Norris' 1899 novel <i>Mcteague: A Story of San Francisco</i> </b>was an interesting piece that we found tied to Polk's inner history. The novel helped guide the visual direction for the project. A story of a dentist on Polk Street whose journey is one of financial boom, greed, futile love, inevitable bust, and demise. The story is a tribute to the larger relationship with the cycle of prosperity and displacement in San Francisco.
+
+</br>
+</br>
+
+<div class="ghost">
+<img src="images/passport/2.jpg"/>
+
+<h2>Exhibition Catalog for the event. Participants can learn about featured artists, vendors, and event map. Newsprint.</h2></div>
+
+It was a great learning opportunity for me to be apart of the concept development for this project alongside the MD team. I inititially viewed the neighborhood as struggling to grab a hold of an original identity at times. Through working on this project I have come to find that Polk is uniquely rich in history. The neighborhood has been home to many different subcultures that have been layered one on top of the other. A constant reminder that the city is always in flux.
+
+</br>
+</br>
+<div class="ghost">
+<img src="images/passport/4.jpg"/>
+<h2>MendeDesign's contribution to the passport. This stamp uses Augmented Reality to reveal a deeper narrative of prosperity and displacement. (Photo from <a href="http://mendedesign.com/" style="color: #00cbe9">mendedesign.com</a>)</h2></div>
+
+
+<div class="rule"></div>
+
+<h1>Thanks to the MendeDesign Team! 
+</br>
+<i>Jeremy Mende, Stephanie Potter Corwin, and Jared Kitade!</i>
+</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="index.html">PREV</div> </a>
+<div class="footer"> <a class="footlink" href="arleo.html">NEXT</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/passport/1.jpg"/>
+  <h3> Passport booklet w/ exhibition catalog as a sleeve. Gold foil stamped. Includes 24 unique artist's stamps.</h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/passport/2.jpg"/>
+  <h3> Exhibition Catalog for the event. Participants can read information on artist bios, vendors, and event map. <i>Newsprint. </i></h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/passport/3.jpg"/>
+  <h3> MD's stamp contribution to the event.</h3></div>
+    
+  <div id="c4" class='image'>
+  <img src="images/passport/4.jpg"/>
+  <h3> The stamp uses Augmented Reality to reveal a video piece.</h3> 
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 300) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 300 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1200) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+
+    if (pos > 1200 && pos < 1700) {
+    hideAll("c4");
+    $("#c3").fadeOut(500);
+    $("#c4").fadeIn(500);
+  }
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>

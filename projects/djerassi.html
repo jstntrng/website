@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justin Truong / Djerassi Web</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+  <link rel=icon href=images/favicon.png>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/djerassi.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy">Djerassi Web Design</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+Web designs for Djerassi, an internationally recognized resident artist program.
+</div>
+
+<div class="bodycopy">
+
+As an intern at MendeDesign I helped the team develop the new visual language and web identity for <a href="https://www.djerassi.com" style="color: #00cbe9"><b>Djerassi</b></a>. It was a pleasure to understand the importance of land and art especially as it impacts the resident artists on the Djerassi grounds. 
+</br>
+</br>
+<img src="images/djerassi/4.jpg"/>
+<h2>A web article on the <i>Torii</i> sculpture at Djerassi.</h2>
+
+Djerassi gives time and space to artists and it was inspiring to be able to study some of it's history as the organization and it's resident artists have impacted the fine arts world in many more ways than one. 
+</br>
+</br>
+<div class="ghost">
+<img src="images/djerassi/1.gif"/>
+<h2>A scroll through the news section.</h2>
+</div>
+The development of the website started from dealing with wireframes and user interaction to building fully annotated documents for web engineers.  It was challenging but rewarding to be able to work through responsive design ideations. Most important, was learning firsthand, the value of telling important narratives through use of digital landscapes.
+</br>
+</br>
+<div class="ghost">
+<img src="images/djerassi/2.jpg"/>
+<h2>Djerassi's mission statement.</h2></div>
+
+
+<div class="rule"></div>
+
+<h1>Thanks to Jeremy Mende, Stephanie Potter Corwin, and Jared Kitade!
+</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="biolumina.html">PREV</div> </a>
+<div class="footer"> <a class="footlink" href="snapchat.html">NEXT</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/djerassi/3.jpg"/>
+  <h3>Djerassi Resident Artists Program grants artists <i>time + space.</i></h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/djerassi/1.gif"/>
+  <h3>A scroll through the news section.</h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/djerassi/2.jpg"/>
+  <h3>Djerassi's mission statement.</h3></div>
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 200) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 200 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1500) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>
