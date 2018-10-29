@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justin Truong / Biolumina</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+  <link rel=icon href=images/favicon.png>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/biolumina.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy">Biolumina</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+This project uses sound as a means to a visual language. The end result is a 12’x12’ inch dynamic composition that hints at a narrative informed by sound.
+</div>
+
+<div class="bodycopy">
+In this composition I formulated the design language by listening to the band <b>Little Glass Men’s</b> song titled <a href="https://www.youtube.com/watch?v=Dmvn86IXTKY" style="color: #00cbe9"><b><i>Biolumina</i></b></a>. 
+
+<div class="ghost"> <img src="images/biolumina/1.jpg"/>
+<h2>An exploration in mark making.</h2></div>
+
+By immersing myself to sound I was able to highlight some key descriptors to the song. The words  <b>sinister</b>, <b>eroded</b>, and <b>aquatic</b> are used to build the topography of formmaking for this project. I was able to build visuals through tool breaking, collage, and photography.
+
+</br>
+</br>
+
+
+<img src="images/biolumina/3.jpg"/>
+In the process of creating, I repeatedly listened to the song and concentrated on letting the sound dictate the flow of movement in my mark making. I also allowed the song to navigate my photographic journey and ultimately inform the relationships of media within the composition.
+</br>
+</br>
+
+<div class="rule"></div>
+
+<h1>Thanks to Jeremy Mende!
+</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="csstypeface.html"> PREV</div> </a>
+<div class="footer"> <a class="footlink" href="djerassi.html">NEXT</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/biolumina/2.jpg"/>
+  <h3>An exploration in dynamic compositions.</h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/biolumina/1.jpg"/>
+  <h3> Experiments in building form.</h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/biolumina/3.jpg"/>
+  <h3> Photographic collage with a hint of narrative.</h3></div>
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 200) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 200 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1500) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>

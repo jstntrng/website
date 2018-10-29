@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Justin Truong / Umbrella Kitchen</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="flickity.css" media="screen">
+  <link rel=icon href=images/favicon.png>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy">Project Title</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+quote
+</div>
+
+<div class="bodycopy">
+<a href="" style="color: #00cbe9"></a>
+</br>
+</br>
+
+<img src="images/folder/4.jpg"/>
+<h2>caption</h2>
+
+<a href="" style="color: #00cbe9">here</a>.
+</br>
+</br>
+
+<div class="ghost"> <img src="images/folder/2.jpg"/>
+<h2>caption</h2></div>
+</br>
+</br>
+<div class="ghost">
+<img src="images/folder/3.jpg"/>
+<h2>caption</h2></div>
+
+
+<div class="rule"></div>
+
+<h1>Credit where credit is due!</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="arleo.html">PREV</div> </a>
+<div class="footer"> <a class="footlink" href="csstypeface.html">NEXT</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/folder/1.jpg"/>
+  <h3></h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/folder/2.jpg"/>
+  <h3></h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/sfolder/3.jpg"/>
+  <h3></h3>
+  </div>
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 200) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 200 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1500) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>

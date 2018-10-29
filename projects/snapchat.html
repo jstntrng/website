@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justin Truong / GW Geofilters</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+  <link rel=icon href=images/favicon.png>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/snapchat.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy"> GS Warriors Snapchat Filters</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+Stephen Curry and Golden State Warriors inspired designs for use with Snaphat’s photo filter features.
+</div>
+
+<div class="bodycopy">
+
+In collaboration with fashion and popular culture blog <a href="https://www.hypebeast.com" style="color: #00cbe9"><b>Hypebeast</b></a> and sportswear company <b>Under Armour</b>, the <b>California College of the Arts rounded up three of their design students to design Snapchat filters to be used inside the Oracle Arena during the 2017 Golden State Warriors playoff games against the Cleveland Cavaliers.</b>
+</br>
+</br>
+
+<img src="images/snapchat/4.jpg"/>
+<h2>Article on the Hypebeast homepage.</h2>
+
+I was one of the students that participated in the project and the article showcasing the work was published on Hypebeast May 2017. The article can be viewed <a href="https://hypebeast.com/2017/5/under-armour-golden-state-warriors-snapchat-filters" style="color: #00cbe9">here</a>.
+</br>
+</br>
+
+<div class="ghost"> <img src="images/snapchat/2.jpg"/>
+<h2>Round one of playoff snapchat filters.</h2></div>
+As a Bay Area native I was excited and thrilled at the opportunity to represent my favorite basketball team and to be able to build something fun for the fans of Stephen Curry and the Warriors.
+</br>
+</br>
+<div class="ghost">
+<img src="images/snapchat/3.jpg"/>
+<h2>Round two of playoff snapchat filters.</h2></div>
+
+
+<div class="rule"></div>
+
+<h1>Thanks to Rachel Berger and Jared Kitade!
+</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="djerassi.html"> PREV</div> </a>
+<div class="footer"> <a class="footlink" href="twelfth.html">NEXT</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/snapchat/1.jpg"/>
+  <h3> Article featured on Hypebeast.com</h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/snapchat/2.jpg"/>
+  <h3>Round one of playoff snapchat filters.</h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/snapchat/3.jpg"/>
+  <h3> Round two of playoff snapchat filters.</h3></div>
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 200) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 200 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1500) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>

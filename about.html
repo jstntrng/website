@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Justin Truong</title>
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+  <link rel=icon href="assets/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+
+<header class="nav-down">
+
+<a href="index.html"><div class="logo">
+  <img src="assets/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="index.html">Projects</a></li>
+    <li class="padnav"><a href="about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+
+<div class="gridcontainer">
+
+
+
+</div>
+
+<div class="colorfield" style="top: 180px;"> 
+
+<span class="ghost">
+  <img src="assets/images/profile.gif"></span>
+
+<div id="info">
+
+<div class="head">Justin Truong</div>
+
+<div class="highlight">
+Graphic designer currently living and working in </br>
+<b>San Francisco</b> with an emphasis in <span style="border-bottom:2px dotted #EF4044;">form making</span>,</br> <span style="border-bottom:2px dotted #EF4044;">interactivity</span>, and <span style="border-bottom:2px dotted #EF4044;">composition</span>. </div>
+  
+<div class="subinfo">I like to stay creative by use of multimedia to develop ideas with </br> a strong ethos. Always adventurous and thoughtful in my approach,</br> I practice traditional graphic design technique synthesized with</br> dynamic photography, video, print, and digital environments. 
+</br>
+</br>
+I received my <b>BFA</b> in <b>Graphic Design</b> at the <b><a href="https://www.cca.edu" style="color: #00cbe9">California College of </br>
+the Arts.</a></b> Worked as an intern at <b><a href="https://www.mendedesign.com" style="color: #00cbe9">MendeDesign</a></b> and recently finished </br>
+a position as a marketing and communications designer at <a href="https://www.chroniclebooks.com" style="color: #00cbe9"><b>Chronicle </br>
+Books</b></a>. Currently I'm interested in design opportunities in exhibit, user</br> experience, and brand design.
+</br>
+</br>
+I'm a Vietnamese American designer that was born in the Bay Area.</br> Being influenced by many families of people and culture, I am a strong </br>believer in diversity and inclusion in art and design. I also have interests </br>in music, photography, and sports. To learn more or to discuss </br>freelance opportunities don't hesitate to reach out!</div>
+
+</br>
+</br>
+<ul class="footlink">
+  <li><a href="mailto:hi@justintruong.net">E-mail</a> </li>
+  <li><a href="resume.pdf">Resume</a> </li>
+  <li><a href="https://www.linkedin.com/in/justintruongdesign">LinkedIn</a> </li>
+  <li><a href="https://www.instagram.com/jstntrng/">Instagram</a> </li>
+</ul>
+</br>
+</br>
+
+
+</div>
+
+<div class="profile"> <img src="assets/images/profile.gif">  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- JAVASCRIPT-->
+
+<script src="assets/jquery.min.js">
+</script>
+<script src="assets/script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+
+}
+
+$("#top").click(function(){
+ scroll(0,0);
+});
+
+
+</script>
+
+
+
+</body></html>

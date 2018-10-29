@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justin Truong / Chronicle Books</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+  <link rel=icon href=images/favicon.png>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+
+
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/chronicle.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy"> Chronicle Books Marketing</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+Marketing material for local San Francisco publishing company Chronicle Books.
+</div>
+
+<div class="bodycopy">
+
+<b>As a marketing and communications designer for <a href="https://www.chroniclebooks.com" style="color: #00cbe9">
+
+Chronicle Books</a> </b>, I assisted the marketing team with designing a flurry of promotion material for books new and old. Print material ranged from postcards and posters to signage and displays for Chronicle's retail stores. 
+</br>
+</br>
+Digitally, I assisted the <b>MARCOM</b> team in creating graphics for promotional videos and standard web ads. I enjoyed being able to design such a wide variety of applications and better yet, getting the opportunity to absorb as much as I could about the publishing industry.
+
+</br>
+</br>
+
+<img src="images/chronicle/4.jpg"/>
+<h2>Printed postcards I designed for titles in adult trade books.</h2>
+
+For Chronicle's Fall 2018 catalog, I designed the divider page spreads that focused on their 25 years of unique gift formats. The colorful and uniquely gridded pages celebrate all of the fun and diverse books through adult trade and children's.
+</br>
+</br>
+
+<div class="ghost"> <img src="images/chronicle/3.jpg"/>
+<h2>Adult Trade and Children's sections of the Fall 2018 Catalog.</h2></div>
+I've witnessed Chronicle's marketing team push through publishing, design, and marketing challenges with thoughtfullness and tenacity! It was great to get an insight on the publishing industry, especially since Chronicle is one of the very few publishers that continue to push thoughtful and progressive content into the book industry pumping more life into print.
+
+</br>
+</br>
+<div class="ghost">
+<img src="images/chronicle/5.jpg"/>
+<h2>An advanced reader's copy of author
+    Dave Eggers' and illustrator Shawn Harris' children's book <i>What Can A Citizen Do?</i></h2></div>
+
+
+<div class="rule"></div>
+
+<h1><b>Thanks to the Chronicle Books MARCOM team!</b>
+</br>
+<i>Liz Rico, Janice Echevarria, Alina Buevich, Sandy Frank, and Jamie Chen!</i>
+</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="../index.html"> HOME</div> </a>
+<div class="footer"> <a class="footlink" href="passport.html">  NEXT </a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/chronicle/1.jpg"/>
+  <h3> Chronicle's Fall 2018 Catalog</h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/chronicle/6.jpg"/>
+  <h3> <i> Construction Site on Christmas Night </i> retail display. </h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/chronicle/3.jpg"/>
+  <h3> Adult Trade and Children's sections of the Fall 2018 Catalog.</h3></div>
+    
+  <div id="c4" class='image'>
+  <img src="images/chronicle/5.jpg"/>
+  <h3> An advanced reader's copy of author
+    Dave Eggers' and illustrator Shawn Harris' children's book <i>What Can A Citizen Do?</i> </h3> 
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 300) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 300 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1200) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+
+    if (pos > 1200 && pos < 1700) {
+    hideAll("c4");
+    $("#c3").fadeOut(500);
+    $("#c4").fadeIn(500);
+  }
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>

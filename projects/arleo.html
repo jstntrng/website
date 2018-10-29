@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justin Truong / Arleo</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="flickity.css" media="screen">
+
+  <link rel=icon href=images/favicon.png>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<span id="footertext" style="font-family: pressura; font-size: 12pt;"> 
+
+</span>
+
+
+<header class="nav-down">
+
+<a href="../index.html"><div class="logo">
+  <img src="css/logo/redlogo.svg"> </div> 
+</a>
+
+  <ul class="navigation">
+    <li class="padnav"><a href="../index.html">Projects</a></li>
+    <li class="padnav"><a href="../about.html">About</a></li>
+    <li><a href="mailto:hi@justintruong.net">Contact</a></li>
+  </ul>
+
+</header>
+
+
+<div id="content">
+
+<div class="right">
+
+  <div class="hero">
+    <img src="images/hero/arleo.jpg"/>
+  </div>
+
+<div class="description">
+
+<div class="headcopy"> Arleo Architects Inc.</div>
+
+<div class="rule"> </div>
+
+<div class="quote">
+New identity and web design for local architecture practice Arleo Architects.
+</div>
+
+<div class="bodycopy">
+
+<i><b><a href="https://www.arleoinc.com" style="color: #00cbe9">Arleo Architects</a></b> celebrates <b>relevant architecture</b>, enhancing the quality of life and well-being for their clients and our communities through <b>vision</b>, <b>innovation</b> and <b>design excellence</b>. </i></b>Ted Arleo collaborated with me in building Arleo Architect's new identity, website, and print collateral.
+</br>
+</br>
+<div class="ghost"> <img src="images/arleo/1.jpg"/>
+<h2>Abstracted A mark.</h2></div>
+We created a bold and resilient word and abstract mark for Arleo Architects. These two marks were used interchangeably amongst business cards, mailers, letterheads, job signs, and title blocks.  
+</br>
+</br>
+
+
+<img src="images/arleo/3.gif"/>
+<h2>A preview of the Arleo website.</h2>
+The web portfolio is grouped into residential and commercial projects which showcase Arleo Architects' innovative and well-crafted work that has influenced a lot of the surrounding community here in San Francisco.
+
+</br>
+</br>
+<div class="ghost"> <img src="images/arleo/5.jpg"/>
+<h2>Business cards for Ted Arleo.</h2></div>
+It was great working with such a talented team of architects. Their vision for no fuss design helped steer the direction of this project.
+</br>
+</br>
+
+<div class="rule"></div>
+
+<h1>Thanks to Ted Arleo!
+</br>
+</h1>
+</div>
+<div class="rule"></div>
+</br>
+
+
+<div class="footer" style="text-align: left;"> <a class="footlink" href="passport.html"> PREV</div> </a>
+<div class="footer"> <a class="footlink" href="umbrella.html">NEXT</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slideshow">
+  
+  <div id="c1" class='image'>
+  <img src="images/arleo/2.jpg"/>
+  <h3>Arleo Architects Inc. wordmark.</h3> 
+  </div>
+
+  <div id="c2" class='image'>
+  <img src="images/arleo/5.jpg"/>
+  <h3>Business cards for Ted Arleo.</h3> 
+  </div>
+
+  <div id="c3" class='image'>
+  <img src="images/arleo/4.jpg"/>
+  <h3>Job sign posted for an upcoming project.</h3></div>
+    
+  <div id="c4" class='image'>
+  <img src="images/arleo/1.jpg"/>
+  <h3>Abstracted A mark. </h3> 
+
+</div>
+
+<!-- JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script src="flickity.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $(window).scrollTop(0);
+});
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$("#c1").fadeIn(1000);
+
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  
+  if (pos < 200) {
+    hideAll("c1");
+    $("#c1").fadeIn(1000);
+
+  }
+
+  if (pos > 200 && pos < 800) {
+    hideAll("c2");
+    $("#c1").fadeOut(500);
+    $("#c2").fadeIn(500);
+  }
+
+    if (pos > 800 && pos < 1500) {
+    hideAll("c3");
+    $("#c2").fadeOut(500);
+    $("#c3").fadeIn(500);
+  }
+
+
+
+});
+
+function hideAll(exceptMe) {
+  $(".image").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+</script>
+
+
+</body>
+</html>
