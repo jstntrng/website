@@ -349,8 +349,12 @@ button {
 @media only screen and (min-width: 375px) and (max-width: 410px) {
 
 .logo {
-	max-width: 280px;
-	max-height: 283.5px;
+	max-width: 250px;
+	max-height: 253.5px;
+}
+
+#container4 {
+	font-size: 9pt;
 }
 
 .footer {
