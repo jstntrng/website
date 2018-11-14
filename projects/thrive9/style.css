@@ -386,7 +386,7 @@ button {
 
 input {
 	font-size: .8em;
-	max-width: 326px;
+	max-width: 153px;
 }
 
 textarea {
@@ -470,7 +470,7 @@ transform: translate(-95%,-95%);
 
 input {
 	font-size: 1em;
-	width: 360px;
+	width: 130px;
 }
 
 textarea {
@@ -541,7 +541,7 @@ transform: translate(-95%,-95%);
 }
 
 input {
-	width: 512px;
+	width: 206px;
 }
 
 textarea {
@@ -594,7 +594,7 @@ font-size: 1.25em;
 }
 
 input {
-	width: 728px;
+	width: 364px;
 }
 
 textarea {
@@ -644,7 +644,7 @@ textarea {
 }
 
 input {
-	width: 1280px;
+	width: 640px;
 }
 
 textarea {
@@ -707,7 +707,7 @@ font-size: 2em;
 
 
 input {
-	width: 1440px;
+	width: 720px;
 }
 
 textarea {
