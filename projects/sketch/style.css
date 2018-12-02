@@ -23,6 +23,7 @@
 .footer {
   margin: auto;
   max-width: 1024px;
+  overflow: hidden
 
 }
 
