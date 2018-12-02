@@ -57,7 +57,7 @@
 
 .arrow {
   position: absolute;
-  max-width: 100px;
+  width: 100px;
   display: block;
   left: 50%;
   top:90%;
@@ -126,7 +126,7 @@
 }
 
 .pt3 {
-    min-height: 30vh;
+    min-height: 20vh;
     background-color: #1a1a1a;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .contactinfo3 a{
-  text-decoration: none;
+  text-decoration: underline #F26A29;
 }
 
 }
