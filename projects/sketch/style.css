@@ -1,0 +1,256 @@
+.body {
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+
+.section {
+	min-height: 100vh;
+	display: flex;
+}
+
+.section-pad {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.container {
+	max-width: 1024px;
+  margin:auto;
+}
+
+.footer {
+  margin: auto;
+  max-width: 1024px;
+
+}
+
+.intro {
+	background-image: url(intro.jpg);
+	color: #000000;
+}
+
+.intro p {
+	font-size: 36px;
+	line-height: 1.2;
+}
+
+.bg-cover {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.logo {
+  max-width: 200px;
+  display:  block;
+  margin-bottom:  80px;
+  margin-left: 0px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+
+@keyframes fadeIn{
+  0%{
+    opacity:  0;
+    transform:  translateY(20px);
+  }
+  
+  50%{
+    transform:  translate(0);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  opacity:  0;
+  animation-name: fadeIn;
+  animation-duration:  3s;
+  animation-delay:  .75s;
+  animation-fill-mode:  forwards;
+}
+
+
+.appear2 {
+  opacity:  0;
+  animation-name: fadeIn;
+  animation-duration:  3s;
+  animation-delay:  2s;
+  animation-fill-mode:  forwards;
+}
+
+.arrow {
+  max-width: 70px;
+  display:  block;
+  text-align:  center;
+  position:absolute;
+  top: 85vh;
+  padding-left: 40px;
+}
+
+.arrow img{
+  width: 100%;
+}
+
+
+.pt2 h1{
+  font-family: sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.pt2 p {
+  font-family: sans-serif;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.pt3 {
+    min-height: 30vh;
+    background-color: #1a1a1a;
+}
+
+.logofooter {
+  float:left;
+  max-width: 80px;
+  display: block;
+  position: relative;
+}
+
+.logofooter img {
+  width: 100%;
+}
+
+.contactinfo1 {
+  float:left;
+  position: relative;
+  width: 512px;
+}
+
+.contactinfo p {
+  color: white;
+  font-family: sans-serif;
+  margin-top: 0;
+}
+
+.contactinfo2 {
+  float:left;
+  position: relative;
+  width: 256px;
+}
+
+.contactinfo2 p {
+  color: white;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-top: 0;
+  line-height: 1.;
+}
+
+.contactinfo3 {
+  float:left;
+  position: relative;
+  width: 256px;
+}
+
+
+.contactinfo3 h1 {
+  color: #F26A29;
+  font-size: 24px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.contactinfo3 a{
+  text-decoration: underline #F26A29;
+}
+
+
+@media only screen and (min-width: 420px) and (max-width: 1023px) {
+
+.pt2 p{
+  font-size: 24px;
+}
+
+.pt2 h1{
+  font-size: 36px;
+}
+
+.pt3 {
+   min-height: 40vh;
+}
+
+
+.logofooter {
+  width: 70px;
+}
+
+.contactinfo {
+  width: 1024px;
+}
+
+.contactinfo2 {
+  margin-top: 20px;
+  width: 1024px;
+}
+
+.contactinfo2 p{
+  font-size: 14px;
+}
+
+.contactinfo3 {
+  margin-top: 10px;
+}
+.contactinfo3 h1{
+  font-size: 16px;
+}
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 419px) {
+
+.pt2 p{
+  font-size: 18px;
+}
+
+.pt2 h1{
+  font-size: 24px;
+}
+
+.pt3 {
+
+   min-height: 40vh;
+}
+
+.logofooter {
+  width: 70px;
+}
+
+.contactinfo {
+  width: 419px;
+}
+
+.contactinfo2 {
+  margin-top: 20px;
+  width: 1024px;
+}
+
+.contactinfo2 p{
+  font-size: 14px;
+}
+
+.contactinfo3 {
+  margin-top: 10px;
+}
+.contactinfo3 h1{
+  font-size: 16px;
+}
+
