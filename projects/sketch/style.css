@@ -244,7 +244,7 @@
 @media only screen and (min-width: 0px) and (max-width: 419px) {
 
 .arrow {
-  width: 60px;
+  width: 50px;
 }
 
 .pt2 p{
@@ -280,12 +280,10 @@
   margin-top: 10px;
 }
 
-.contactinfo3 h1{
-  font-size: 16px;
-}
 
 .contactinfo3 a{
   text-decoration: underline #FFFFFF;
+  font-size: 12px;
 }
 
 }
